@@ -234,3 +234,74 @@ img {
   color: #9ca4b1;
   font-size: 0.875em;
 }
+
+/* Contact */
+.contact {
+  font-family: "kontora-semi-bold", sans-serif;
+  font-size: 2.125em;
+  text-align: center;
+}
+
+.contact h1 {
+  color: #fff;
+  width: 405px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  color: #f3ceb1;
+  margin: 40px 0 100px 0;
+  display: inline-block;
+}
+
+.contact img {
+  display: inline-block;
+}
+
+/* Footer */
+.footer .line_separator {
+  width: 100%;
+  height: 1px;
+  background: #9ca4b1;
+}
+
+.footer {
+  margin-bottom: 40px;
+}
+
+.network ul {
+  margin-top: 40px;
+}
+
+.network ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.email {
+  margin-top: 40px;
+}
+
+.email_text {
+  float: right;
+}
+
+.email_text ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.email_text p {
+  display: inline;
+  font-family: "kontora-medium", sans-serif;
+  color: #fff;
+  font-size: 1em;
+}
+
+.copyright {
+  background: #f3ceb1;
+  padding: 20px 0;
+  font-family: "kontora-medium", sans-serif;
+  color: #0d0e10;
+  text-align: center;
+}
