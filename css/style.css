@@ -1,111 +1,205 @@
 /* General Styles */
 body {
-    background: #0D0E10;
+  background: #0d0e10;
+}
+
+/* img {
+  display: block;
+  max-width: 100%;
+} */
+
+.section_title {
+  font-family: "kontora-semi-bold", sans-serif;
+  font-size: 2.125em;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.separator {
+  width: 3px;
+  height: 35px;
+  background: #f3ceb1;
+  margin: 60px auto;
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #f5f5f5;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar {
-    width: 6px;
-    background-color: #f5f5f5;
+  width: 6px;
+  background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #f3ceb1;
+  background-color: #f3ceb1;
 }
 
 /* Header */
 .header {
-    width: 100%;
-    padding-top: 40px;
+  width: 100%;
+  padding-top: 40px;
 }
 
 .logo {
-    font-family: 'kontora-black', sans-serif;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.25em;
+  font-family: "kontora-black", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
 }
 
 .header_menu {
-    text-align: right;
+  text-align: right;
 }
 
 .header_menu ul li {
-    display: inline-block;
-    margin-left: 20px;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .header_menu ul li a {
-    color: #fff;
-    font-family: 'kontora-black', sans-serif;
-    text-transform: capitalize;
-    padding: 5px;
-    transition: 0.3s;
+  color: #fff;
+  font-family: "kontora-black", sans-serif;
+  text-transform: capitalize;
+  padding: 5px;
+  transition: 0.3s;
 }
 
 .header_menu ul li a:hover {
-    color: #f3ceb1;
+  color: #f3ceb1;
 }
 
 /* Introduction */
 .avatar {
-    text-align: center;
-    margin-top: 100px;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .name {
-    text-align: center;
-    font-size: 1.5em;
-    color: #fff;
-    font-family: 'kontora-black', sans-serif;
-    margin-top: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+  font-family: "kontora-black", sans-serif;
+  margin-top: 20px;
 }
 
 .introduction_title {
-    text-align: center;
-    font-size: 4em;
-    color: #fff;
-    font-family: 'kontora-semi-bold', sans-serif;
-    margin-top: 40px;
+  text-align: center;
+  font-size: 4em;
+  color: #fff;
+  font-family: "kontora-semi-bold", sans-serif;
+  margin-top: 40px;
 }
 
 .introduction_title h1 {
-    margin: 0 auto;
-    width: 650px;
+  margin: 0 auto;
+  width: 650px;
 }
 
 .introduction_subtitle {
-    text-align: center;
-    font-size: 1.75em;
-    color: #9CA4B1;
-    font-family: 'kontora-medium', sans-serif;
-    margin-top: 40px;
+  text-align: center;
+  font-size: 1.75em;
+  color: #9ca4b1;
+  font-family: "kontora-medium", sans-serif;
+  margin-top: 40px;
 }
 
 .introduction_subtitle h3 {
-    margin: 0 auto;
-    width: 340px;
+  margin: 0 auto;
+  width: 340px;
 }
 
 .introduction_button p {
-    margin: 0 auto;
-    background: #fff;
-    color: #0D0E10;
-    text-align: center;
-    font-family: 'kontora-bold', sans-serif;
-    font-size: 1.125em;
-    text-transform: uppercase;
-    border-radius: 40px;
-    padding: 30px 0 30px 0;
-    width: 250px;
-    margin-top: 40px;
-    transition: 0.3s;
+  margin: 0 auto;
+  background: #fff;
+  color: #0d0e10;
+  text-align: center;
+  font-family: "kontora-bold", sans-serif;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  border-radius: 40px;
+  padding: 30px 0 30px 0;
+  width: 250px;
+  margin-top: 40px;
+  transition: 0.3s;
 }
 
 .introduction_button p:hover {
-    background: #f3ceb1;
+  background: #f3ceb1;
+}
+
+/* Hobbies */
+.hobbies h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hobbie_images {
+  margin-top: 40px;
+}
+
+/* Resume */
+.resume .grid-8 {
+  margin-top: 40px;
+}
+
+.resume h2 {
+  font-family: "kontora-semi-bold", sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.resume_item {
+  margin-top: 30px;
+  font-family: "kontora-semi-bold", sans-serif;
+  text-transform: capitalize;
+}
+
+.resume_item_title p {
+  color: #fff;
+  font-size: 1.375em;
+  display: inline;
+}
+
+.resume_item_title img {
+  display: inline;
+}
+
+.resume_item_subtitle {
+  color: #fff;
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.resume_item_date {
+  color: #9ca4b1;
+  font-size: 1em;
+}
+
+.skills_item {
+  margin-top: 30px;
+}
+
+.skills_item ul li {
+  font-family: "kontora-semi-bold", sans-serif;
+  text-transform: capitalize;
+  color: #9ca4b1;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.skills_item ul li:first-child {
+  font-size: 1.375em;
+  color: #fff;
+}
+
+.skills .desing {
+  display: inline-block;
+}
+
+.skills .development {
+  margin-left: 80px;
+  display: inline-block;
 }
