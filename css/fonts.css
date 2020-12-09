@@ -18,30 +18,6 @@
 }
 
 @font-face {
-  font-family: "kontora-extra-black";
-  src: url("../assets/fonts/kontora_extrablack-webfont.woff2") format("woff2"),
-    url("../assets/fonts/kontora_extrablack-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "kontora-extra-bold";
-  src: url("../assets/fonts/kontora_extrabold-webfont.woff2") format("woff2"),
-    url("../assets/fonts/kontora_extrabold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "kontora-light";
-  src: url("../assets/fonts/kontora_light-webfont.woff2") format("woff2"),
-    url("../assets/fonts/kontora_light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "kontora-medium";
   src: url("../assets/fonts/kontora_medium-webfont.woff2") format("woff2"),
     url("../assets/fonts/kontora_medium-webfont.woff") format("woff");
@@ -50,25 +26,9 @@
 }
 
 @font-face {
-  font-family: "kontora-regular";
-  src: url("../assets/fonts/kontora_regular-webfont.woff2") format("woff2"),
-    url("../assets/fonts/kontora_regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "kontora-semi-bold";
   src: url("../assets/fonts/kontora_semibold-webfont.woff2") format("woff2"),
     url("../assets/fonts/kontora_semibold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "kontora-thin";
-  src: url("../assets/fonts/kontora_thin-webfont.woff2") format("woff2"),
-    url("../assets/fonts/kontora_thin-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
