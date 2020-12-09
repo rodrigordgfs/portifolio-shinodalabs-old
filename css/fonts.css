@@ -3,72 +3,72 @@
 
 @font-face {
   font-family: "kontora-black";
-  src: url("kontora_black-webfont.woff2") format("woff2"),
-    url("kontora_black-webfont.woff") format("woff");
+  src: url("../assets/fonts/kontora_black-webfont.woff2") format("woff2"),
+    url("../assets/fonts/kontora_black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "kontora-bold";
-  src: url("kontora_bold-webfont.woff2") format("woff2"),
-    url("kontora_bold-webfont.woff") format("woff");
+  src: url("../assets/fonts/kontora_bold-webfont.woff2") format("woff2"),
+    url("../assets/fonts/kontora_bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "kontora-extra-black";
-  src: url("kontora_extrablack-webfont.woff2") format("woff2"),
-    url("kontora_extrablack-webfont.woff") format("woff");
+  src: url("../assets/fonts/kontora_extrablack-webfont.woff2") format("woff2"),
+    url("../assets/fonts/kontora_extrablack-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "kontora-extra-bold";
-  src: url("kontora_extrabold-webfont.woff2") format("woff2"),
-    url("kontora_extrabold-webfont.woff") format("woff");
+  src: url("../assets/fonts/kontora_extrabold-webfont.woff2") format("woff2"),
+    url("../assets/fonts/kontora_extrabold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "kontora-light";
-  src: url("kontora_light-webfont.woff2") format("woff2"),
-    url("kontora_light-webfont.woff") format("woff");
+  src: url("../assets/fonts/kontora_light-webfont.woff2") format("woff2"),
+    url("../assets/fonts/kontora_light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "kontora-medium";
-  src: url("kontora_medium-webfont.woff2") format("woff2"),
-    url("kontora_medium-webfont.woff") format("woff");
+  src: url("../assets/fonts/kontora_medium-webfont.woff2") format("woff2"),
+    url("../assets/fonts/kontora_medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "kontora-regular";
-  src: url("kontora_regular-webfont.woff2") format("woff2"),
-    url("kontora_regular-webfont.woff") format("woff");
+  src: url("../assets/fonts/kontora_regular-webfont.woff2") format("woff2"),
+    url("../assets/fonts/kontora_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "kontora-semi-bold";
-  src: url("kontora_semibold-webfont.woff2") format("woff2"),
-    url("kontora_semibold-webfont.woff") format("woff");
+  src: url("../assets/fonts/kontora_semibold-webfont.woff2") format("woff2"),
+    url("../assets/fonts/kontora_semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "kontora-thin";
-  src: url("kontora_thin-webfont.woff2") format("woff2"),
-    url("kontora_thin-webfont.woff") format("woff");
+  src: url("../assets/fonts/kontora_thin-webfont.woff2") format("woff2"),
+    url("../assets/fonts/kontora_thin-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

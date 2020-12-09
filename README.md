@@ -1,5 +1,5 @@
-# Product Name
-> Short blurb about what your product does.
+# Portifólio - ShinodaLabs
+> Site para você conhecer um pouco quem eu sou e conhecer meus projetos..
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]

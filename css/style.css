@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    background: #0D0E10;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f3ceb1;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    padding-top: 40px;
+}
+
+.logo {
+    font-family: 'kontora-black', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+}
+
+.header_menu {
+    text-align: right;
+}
+
+.header_menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header_menu ul li a {
+    color: #fff;
+    font-family: 'kontora-black', sans-serif;
+    text-transform: capitalize;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.header_menu ul li a:hover {
+    color: #f3ceb1;
+}
+
+/* Introduction */
+.avatar {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.name {
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    font-family: 'kontora-black', sans-serif;
+    margin-top: 20px;
+}
+
+.introduction_title {
+    text-align: center;
+    font-size: 4em;
+    color: #fff;
+    font-family: 'kontora-semi-bold', sans-serif;
+    margin-top: 40px;
+}
+
+.introduction_title h1 {
+    margin: 0 auto;
+    width: 650px;
+}
+
+.introduction_subtitle {
+    text-align: center;
+    font-size: 1.75em;
+    color: #9CA4B1;
+    font-family: 'kontora-medium', sans-serif;
+    margin-top: 40px;
+}
+
+.introduction_subtitle h3 {
+    margin: 0 auto;
+    width: 340px;
+}
+
+.introduction_button p {
+    margin: 0 auto;
+    background: #fff;
+    color: #0D0E10;
+    text-align: center;
+    font-family: 'kontora-bold', sans-serif;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    border-radius: 40px;
+    padding: 30px 0 30px 0;
+    width: 250px;
+    margin-top: 40px;
+    transition: 0.3s;
+}
+
+.introduction_button p:hover {
+    background: #f3ceb1;
+}
