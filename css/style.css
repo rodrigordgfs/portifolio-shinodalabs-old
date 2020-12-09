@@ -3,10 +3,10 @@ body {
   background: #0d0e10;
 }
 
-/* img {
+img {
   display: block;
   max-width: 100%;
-} */
+}
 
 .section_title {
   font-family: "kontora-semi-bold", sans-serif;
@@ -33,7 +33,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #f3ceb1;
+  background-color: #0d0e10;
 }
 
 /* Header */
@@ -71,8 +71,8 @@ body {
 }
 
 /* Introduction */
-.avatar {
-  text-align: center;
+.avatar img {
+  margin: 0 auto;
   margin-top: 100px;
 }
 
@@ -202,4 +202,35 @@ body {
 .skills .development {
   margin-left: 80px;
   display: inline-block;
+}
+
+/* Projects */
+.projects .section_title {
+  margin-bottom: 40px;
+}
+
+.projects_right {
+  margin-top: 150px;
+}
+
+.project_item li {
+  margin-bottom: 20px;
+}
+
+.project_item img {
+  border: 1px solid #9ca4b1;
+}
+
+.project_item h3 {
+  font-family: "kontora-semi-bold", sans-serif;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.25em;
+  margin: 20px 0;
+}
+
+.project_item p {
+  font-family: "kontora-medium", sans-serif;
+  color: #9ca4b1;
+  font-size: 0.875em;
 }
