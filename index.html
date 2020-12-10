@@ -1,314 +1,422 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>ShinodaLabs - Protifólio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Portifólio - ShinodaLabs" />
-    <meta property="og:description" content="Site for you to know a little who I am and know my projects." />
-    <meta property="og:url" content="https://shinodalabs.com.br"" />
-    <meta property="og:image" content="https://shinodalabs.com.br/assets/images/favicon.png" />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <meta
+      property="og:description"
+      content="Site for you to know a little who I am and know my projects."
+    />
+    <meta property="og:url" content="https://shinodalabs.com.br" />
+    <meta
+      property=" og:image"
+      content="https://shinodalabs.com.br/assets/images/favicon.png"
+    />
+    <!-- <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#f3ceb1">
+    <link rel="stylesheet" href="css/simple-anime.css" /> -->
+    <link rel="stylesheet" href="css/style-min.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#f3ceb1" />
     <script>
-        document.documentElement.classList.add("js");
+      document.documentElement.classList.add("js");
     </script>
-</head>
-<body>
+  </head>
+
+  <body>
     <!-- Menu -->
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="grid-3 logo">ShinodaLabs</a>
-            <nav class="grid-13 header_menu">
-                <ul>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header fadeInDown" data-anime="200">
+      <div class="container">
+        <a href="index.html" class="grid-3 logo">ShinodaLabs</a>
+        <nav class="grid-13 header_menu">
+          <ul>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Introduction -->
     <section class="container">
-        <div class="avatar grid-16">
-            <img src="assets/images/avatar.png" alt="Avatar">
-        </div>
-        <div class="name grid-16">
-            <h2>Hi, I'm Rodrigo</h2>
-        </div>
-        <div class="introduction_title grid-16">
-            <h1>Developing responsive websites and experience.</h1>
-        </div>
-        <div class="introduction_subtitle grid-16">
-            <h3>A young padawan looking to become a jedi in website developement.</h1>
-        </div>
-        <div class="introduction_button grid-16">
-            <a href="https://www.linkedin.com/in/rodrigo-viegas-rodrigues-83315164/" target="_blank">
-                <p>Connect with me</p>
-            </a>
-        </div>
+      <div class="avatar grid-16">
+        <img
+          src="assets/images/avatar.png"
+          alt="Avatar"
+          data-anime="400"
+          class="fadeInDown"
+        />
+      </div>
+      <div class="name grid-16 fadeInDown" data-anime="400">
+        <h2>Hi, I'm Rodrigo</h2>
+      </div>
+      <div class="introduction_title grid-16 fadeInDown" data-anime="800">
+        <h1>Developing responsive websites and experience.</h1>
+      </div>
+      <div class="introduction_subtitle grid-16 fadeInDown" data-anime="1200">
+        <h3>
+          A young padawan looking to become a jedi in website developement.
+        </h3>
+      </div>
+      <div class="introduction_button grid-16 fadeInDown" data-anime="1600">
+        <a
+          href="https://www.linkedin.com/in/rodrigo-viegas-rodrigues-83315164/"
+          target="_blank"
+        >
+          <p>Connect with me</p>
+        </a>
+      </div>
     </section>
 
     <!-- Hobbies -->
     <section class="container hobbies">
-        <div class="section_title grid-16" id="hobbies">
-            <h1>Hobbies</h1>
+      <div class="section_title grid-16" id="hobbies">
+        <h1>Hobbies</h1>
+      </div>
+      <div class="hobbie_images grid-1-3">
+        <img src="assets/images/hobbie-moto.png" alt="Hobbie Moto" />
+        <div class="hobbie_overlay">
+          <div class="hobbie_text">
+            <p>
+              Riding a motorcycle is one of my passions, whenever I am on the
+              road
+            </p>
+          </div>
         </div>
-        <div class="hobbie_images grid-1-3">
-            <img src="assets/images/hobbie-moto.png" alt="Hobbie Moto">
-            <div class="hobbie_overlay">
-                <div class="hobbie_text">
-                    <p>Riding a motorcycle is one of my passions, whenever I am on the road</p>
-                </div>
-            </div>
+      </div>
+      <div class="hobbie_images grid-1-3">
+        <img src="assets/images/hobbie-game.png" alt="Hobbie Game" />
+        <div class="hobbie_overlay">
+          <div class="hobbie_text">
+            <p>
+              Yes, I am a "gamer", whenever it is possible to set aside some
+              time to rest and play.
+            </p>
+          </div>
         </div>
-        <div class="hobbie_images grid-1-3">
-            <img src="assets/images/hobbie-game.png" alt="Hobbie Game">
-            <div class="hobbie_overlay">
-                <div class="hobbie_text">
-                    <p>Yes, I am a "gamer", whenever it is possible to set aside some time to rest and play.</p>
-                </div>
-            </div>
+      </div>
+      <div class="hobbie_images grid-1-3">
+        <img src="assets/images/hobbie-music.png" alt="Hobbie Music" />
+        <div class="hobbie_overlay">
+          <div class="hobbie_text">
+            <p>Lover of that good old rock and roll</p>
+          </div>
         </div>
-        <div class="hobbie_images grid-1-3">
-            <img src="assets/images/hobbie-music.png" alt="Hobbie Music">
-            <div class="hobbie_overlay">
-                <div class="hobbie_text">
-                    <p>Lover of that good old rock and roll</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
     <div class="separator"></div>
 
     <!-- Resume -->
     <section class="container resume">
-        <div class="section_title grid-16" id="resume">
-            <h1>Resume</h1>
-        </div>
-        <div class="work_experience grid-8">
-            <h2>Work Experience</h2>
-            <ul class="resume_item">
-                <li>
-                    <div class="resume_item_title">
-                        <p>Lojas Pompéia</p>
-                        <img src="assets/icons/link.svg" alt="Link Icon">
-                    </div>
-                    <div class="resume_item_subtitle">
-                        <p>Programming assistant</p>
-                    </div>
-                    <div class="resume_item_date">
-                        <p>April, 2019 - Current</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="education grid-8">
-            <h2>Education</h2>
-            <ul class="resume_item">
-                <li>
-                    <div class="resume_item_title">
-                        <p>Federal Institute of Rio Grande do Sul</p>
-                        <img src="assets/icons/link.svg" alt="Link Icon">
-                    </div>
-                    <div class="resume_item_subtitle">
-                        <p>Analysis and systems development</p>
-                    </div>
-                    <div class="resume_item_date">
-                        <p>2019 - Current</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="skills grid-8">
-            <h2>Skills</h2>
-            <div class="desing skills_item">
-                <ul>
-                    <li>Design</li>
-                    <li>UI/UX Design</li>
-                    <li>Wireframing</li>
-                    <li>Prototyping</li>
-                </ul>
+      <div class="section_title grid-16" id="resume">
+        <h1>Resume</h1>
+      </div>
+      <div class="work_experience grid-8">
+        <h2>Work Experience</h2>
+        <ul class="resume_item">
+          <li>
+            <div class="resume_item_title">
+              <p>Lojas Pompéia</p>
+              <img src="assets/icons/link.svg" alt="Link Icon" />
             </div>
-            <div class="development skills_item">
-                <ul>
-                    <li>Development</li>
-                    <li>Front-End Development</li>
-                    <li>HTML5/CSS3/JS</li>
-                    <li>VueJS</li>
-                </ul>
+            <div class="resume_item_subtitle">
+              <p>Programming assistant</p>
             </div>
+            <div class="resume_item_date">
+              <p>April, 2019 - Current</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="education grid-8">
+        <h2>Education</h2>
+        <ul class="resume_item">
+          <li>
+            <div class="resume_item_title">
+              <p>Federal Institute of Rio Grande do Sul</p>
+              <img src="assets/icons/link.svg" alt="Link Icon" />
+            </div>
+            <div class="resume_item_subtitle">
+              <p>Analysis and systems development</p>
+            </div>
+            <div class="resume_item_date">
+              <p>2019 - Current</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="skills grid-8">
+        <h2>Skills</h2>
+        <div class="desing skills_item">
+          <ul>
+            <li>Design</li>
+            <li>UI/UX Design</li>
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+          </ul>
         </div>
-        <div class="online_courses grid-8">
-            <h2>Online Courses</h2>
-            <ul class="resume_item">
-                <li>
-                    <div class="resume_item_title">
-                        <p>Origamid</p>
-                        <img src="assets/icons/link.svg" alt="Link Icon">
-                    </div>
-                    <div class="resume_item_subtitle">
-                        <p>UI/UX Desing and Website Development</p>
-                    </div>
-                    <div class="resume_item_date">
-                        <p>November, 2020 - Current</p>
-                    </div>
-                </li>
-            </ul>
+        <div class="development skills_item">
+          <ul>
+            <li>Development</li>
+            <li>Front-End Development</li>
+            <li>HTML5/CSS3/JS</li>
+            <li>VueJS</li>
+          </ul>
         </div>
+      </div>
+      <div class="online_courses grid-8">
+        <h2>Online Courses</h2>
+        <ul class="resume_item">
+          <li>
+            <div class="resume_item_title">
+              <p>Origamid</p>
+              <img src="assets/icons/link.svg" alt="Link Icon" />
+            </div>
+            <div class="resume_item_subtitle">
+              <p>UI/UX Desing and Website Development</p>
+            </div>
+            <div class="resume_item_date">
+              <p>November, 2020 - Current</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <div class="separator"></div>
 
     <!-- Projects -->
     <section class="container projects">
-        <div class="section_title grid-16" id="projects">
-            <h1>The work i do,<br>and others little things</h1>
-        </div>
-        <div class="projects_left grid-8">
-            <ul class="project_item">
-                <li>
-                    <a href="https://shinodalabs.com.br/amplify/" target="_blank">
-                        <div class="project_item_image">
-                            <img src="assets/images/project.png" alt="Project Image">
-                            <div class="project_item_image_overlay">
-                                <div class="project_item_image_overlay_icon">
-                                    <img src="assets/icons/eye.png" alt="Icon eye">
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Amplify - Digital Agency</h3>
-                        <p>This website was created with HTML5, CSS3 and JS putting into practice the experience acquired in Origamid's complete web design course</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://shinodalabs.com.br/amplify/" target="_blank">
-                        <div class="project_item_image">
-                            <img src="assets/images/project.png" alt="Project Image">
-                            <div class="project_item_image_overlay">
-                                <div class="project_item_image_overlay_icon">
-                                    <img src="assets/icons/eye.png" alt="Icon eye">
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Amplify - Digital Agency</h3>
-                        <p>This website was created with HTML5, CSS3 and JS putting into practice the experience acquired in Origamid's complete web design course</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="projects_right grid-8">
-            <ul class="project_item">
-                <li>
-                    <a href="https://shinodalabs.com.br/amplify/" target="_blank">
-                        <div class="project_item_image">
-                            <img src="assets/images/project.png" alt="Project Image">
-                            <div class="project_item_image_overlay">
-                                <div class="project_item_image_overlay_icon">
-                                    <img src="assets/icons/eye.png" alt="Icon eye">
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Amplify - Digital Agency</h3>
-                        <p>This website was created with HTML5, CSS3 and JS putting into practice the experience acquired in Origamid's complete web design course</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://shinodalabs.com.br/amplify/" target="_blank">
-                        <div class="project_item_image">
-                            <img src="assets/images/project.png" alt="Project Image">
-                            <div class="project_item_image_overlay">
-                                <div class="project_item_image_overlay_icon">
-                                    <img src="assets/icons/eye.png" alt="Icon eye">
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Amplify - Digital Agency</h3>
-                        <p>This website was created with HTML5, CSS3 and JS putting into practice the experience acquired in Origamid's complete web design course</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div class="section_title grid-16" id="projects">
+        <h1>The work i do,<br />and others little things</h1>
+      </div>
+      <div class="projects_left grid-8">
+        <ul class="project_item">
+          <li>
+            <a href="https://shinodalabs.com.br/amplify/" target="_blank">
+              <div class="project_item_image">
+                <img src="assets/images/project.png" alt="Project Image" />
+                <div class="project_item_image_overlay">
+                  <div class="project_item_image_overlay_icon">
+                    <img src="assets/icons/eye.png" alt="Icon eye" />
+                  </div>
+                </div>
+              </div>
+              <h3>Amplify - Digital Agency</h3>
+              <p>
+                This website was created with HTML5, CSS3 and JS putting into
+                practice the experience acquired in Origamid's complete web
+                design course
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="https://shinodalabs.com.br/amplify/" target="_blank">
+              <div class="project_item_image">
+                <img src="assets/images/project.png" alt="Project Image" />
+                <div class="project_item_image_overlay">
+                  <div class="project_item_image_overlay_icon">
+                    <img src="assets/icons/eye.png" alt="Icon eye" />
+                  </div>
+                </div>
+              </div>
+              <h3>Amplify - Digital Agency</h3>
+              <p>
+                This website was created with HTML5, CSS3 and JS putting into
+                practice the experience acquired in Origamid's complete web
+                design course
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="projects_right grid-8">
+        <ul class="project_item">
+          <li>
+            <a href="https://shinodalabs.com.br/amplify/" target="_blank">
+              <div class="project_item_image">
+                <img src="assets/images/project.png" alt="Project Image" />
+                <div class="project_item_image_overlay">
+                  <div class="project_item_image_overlay_icon">
+                    <img src="assets/icons/eye.png" alt="Icon eye" />
+                  </div>
+                </div>
+              </div>
+              <h3>Amplify - Digital Agency</h3>
+              <p>
+                This website was created with HTML5, CSS3 and JS putting into
+                practice the experience acquired in Origamid's complete web
+                design course
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="https://shinodalabs.com.br/amplify/" target="_blank">
+              <div class="project_item_image">
+                <img src="assets/images/project.png" alt="Project Image" />
+                <div class="project_item_image_overlay">
+                  <div class="project_item_image_overlay_icon">
+                    <img src="assets/icons/eye.png" alt="Icon eye" />
+                  </div>
+                </div>
+              </div>
+              <h3>Amplify - Digital Agency</h3>
+              <p>
+                This website was created with HTML5, CSS3 and JS putting into
+                practice the experience acquired in Origamid's complete web
+                design course
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <div class="separator"></div>
 
     <!-- Contact -->
     <section class="container contact">
-        <div class="grid-16">
-            <h1 id="contact">Let me know if you want to talk about a potencial collaboration. I'm available for freelance work.</h1>
-            <a href="#">
-                <h2>Lets grow together</h2>
-            </a>
-        </div>
+      <div class="grid-16">
+        <h1 id="contact">
+          Let me know if you want to talk about a potencial collaboration. I'm
+          available for freelance work.
+        </h1>
+        <a href="#">
+          <h2>Lets grow together</h2>
+        </a>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="container footer">
-        <div class="line_separator grid-16"></div>
-        <div class="network grid-8">
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/MrShiinoda" target="_blank">
-                        <img src="assets/icons/facebook.svg" alt="Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/mr_shinodaa/" target="_blank">
-                        <img src="assets/icons/instagram.svg" alt="Instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/rodrigordgfs" target="_blank">
-                        <img src="assets/icons/github.svg" alt="Github ">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/rodrigo-viegas-rodrigues-83315164/" target="_blank">
-                        <img src="assets/icons/linkedin.svg" alt="Linkedin">
-                    </a>
-                </li>
-            </ul>
+      <div class="line_separator grid-16"></div>
+      <div class="network grid-8">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/MrShiinoda" target="_blank">
+              <img src="assets/icons/facebook.svg" alt="Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/mr_shinodaa/" target="_blank">
+              <img src="assets/icons/instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/rodrigordgfs" target="_blank">
+              <img src="assets/icons/github.svg" alt="Github " />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/rodrigo-viegas-rodrigues-83315164/"
+              target="_blank"
+            >
+              <img src="assets/icons/linkedin.svg" alt="Linkedin" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="email grid-8">
+        <div class="email_text">
+          <a href="mailto:rodrigo@shinodalabs.com.br">
+            <p>rodrigo@shinodalabs.com.br</p>
+          </a>
         </div>
-        <div class="email grid-8">
-            <div class="email_text">
-                <a href="mailto:rodrigo@shinodalabs.com.br">
-                    <p>rodrigo@shinodalabs.com.br</p>
-                </a>
-            </div>
-        </div>
+      </div>
     </footer>
 
     <div class="copyright">
-        <p>2020 &copy; ShinodaLabs. All rights reserved.</p>
+      <p>2020 &copy; ShinodaLabs. All rights reserved.</p>
     </div>
 
-</body>
+    <script src="js/simple-anime.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
