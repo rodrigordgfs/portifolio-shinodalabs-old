@@ -6,6 +6,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .section_title {
@@ -136,7 +137,38 @@ img {
 }
 
 .hobbie_images {
+  position: relative;
   margin-top: 40px;
+}
+
+.hobbie_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 97%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hobbie_images:hover .hobbie_overlay {
+  opacity: 1;
+}
+
+.hobbie_text {
+  color: #fff;
+  font-family: "kontora-semi-bold", sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /* Resume */
@@ -251,11 +283,11 @@ img {
 .contact h2 {
   color: #f3ceb1;
   margin: 40px 0 100px 0;
-  display: inline-block;
+  transition: 0.3s;
 }
 
-.contact img {
-  display: inline-block;
+.contact h2:hover {
+  color: #fff;
 }
 
 /* Footer */
@@ -284,11 +316,6 @@ img {
 
 .email_text {
   float: right;
-}
-
-.email_text ul li {
-  display: inline-block;
-  margin-right: 20px;
 }
 
 .email_text p {
