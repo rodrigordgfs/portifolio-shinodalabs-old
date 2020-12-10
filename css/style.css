@@ -131,9 +131,18 @@ img {
 }
 
 /* Hobbies */
-.hobbies h1 {
+.hobbies h2 {
   text-align: center;
   margin-top: 100px;
+}
+
+.hobbies h2::after {
+  content: "";
+  width: 75px;
+  height: 3px;
+  background: #f3ceb1;
+  display: block;
+  margin: 5px auto;
 }
 
 .hobbie_images {
@@ -176,11 +185,20 @@ img {
   margin-top: 40px;
 }
 
-.resume h2 {
+.resume h3 {
   font-family: "kontora-semi-bold", sans-serif;
   font-size: 1.5em;
   color: #fff;
   text-transform: capitalize;
+}
+
+.resume h2::after {
+  content: "";
+  width: 75px;
+  height: 3px;
+  background: #f3ceb1;
+  display: block;
+  margin-top: 5px
 }
 
 .resume_item {
@@ -237,6 +255,15 @@ img {
 }
 
 /* Projects */
+.projects h2::after {
+  content: "";
+  width: 75px;
+  height: 3px;
+  background: #f3ceb1;
+  display: block;
+  margin-top: 5px
+}
+
 .projects .section_title {
   margin-bottom: 40px;
 }
