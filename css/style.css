@@ -253,6 +253,40 @@ img {
   border: 1px solid #9ca4b1;
 }
 
+.project_item_image {
+  position: relative;
+}
+
+.project_item_image_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.project_item_image:hover .project_item_image_overlay {
+  opacity: 1;
+}
+
+.project_item_image_overlay_icon img {
+  border: none;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .project_item h3 {
   font-family: "kontora-semi-bold", sans-serif;
   text-transform: capitalize;
