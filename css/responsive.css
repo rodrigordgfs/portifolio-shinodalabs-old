@@ -41,7 +41,7 @@
   }
 
   .introduction_title {
-    font-size: 3.25em;
+    font-size: 2.50em;
   }
 
   .introduction_title h1 {
@@ -63,7 +63,7 @@
 
   /* Resume */
   .skills .development {
-    margin-left: 30px;
+    margin-left: 0px;
     display: inline-block;
   }
 
