@@ -73,12 +73,13 @@
   }
 
   /* Contact */
-  .contact h1 {
+
+  .contact h2 {
     width: auto;
     margin: 0;
   }
 
-  .contact h2 {
+  .contact h3 {
     margin-bottom: 80px;
   }
 
