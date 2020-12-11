@@ -3,6 +3,19 @@ body {
   background: #0d0e10;
 }
 
+.bg_dark {
+  width: 100%;
+  background: #000;
+}
+
+.bg_top {
+  padding-bottom: 50px;
+}
+
+.bg_bottom {
+  padding: 40px 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -48,6 +61,11 @@ img {
   color: #fff;
   text-transform: uppercase;
   font-size: 1.25em;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  color: #f3ceb1;
 }
 
 .header_menu {
@@ -133,7 +151,7 @@ img {
 /* Hobbies */
 .hobbies h2 {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 .hobbies h2::after {
@@ -157,7 +175,7 @@ img {
   left: 0;
   right: 0;
   height: 100%;
-  width: 97%;
+  width: 100%;
   opacity: 0;
   transition: 0.5s ease;
   background-color: rgba(0, 0, 0, 0.8);
@@ -213,6 +231,10 @@ img {
   display: inline;
 }
 
+.resume_item_title p:hover {
+  color: #f3ceb1;
+}
+
 .resume_item_title img {
   display: inline;
 }
@@ -221,6 +243,7 @@ img {
   color: #fff;
   font-size: 1em;
   margin: 10px 0;
+  text-transform: initial;
 }
 
 .resume_item_date {
@@ -358,11 +381,7 @@ img {
   background: #9ca4b1;
 }
 
-.footer {
-  margin-bottom: 40px;
-}
-
-.network ul {
+.network {
   margin-top: 40px;
 }
 
@@ -384,6 +403,11 @@ img {
   font-family: "kontora-medium", sans-serif;
   color: #fff;
   font-size: 1em;
+  transition: 0.3s;
+}
+
+.email_text p:hover {
+  color: #f3ceb1;
 }
 
 .copyright {

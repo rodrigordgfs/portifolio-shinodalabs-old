@@ -2,29 +2,34 @@
 <html lang="pt-br">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6WWNSE9ER"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-P6WWNSE9ER"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-P6WWNSE9ER');
+      gtag("config", "G-P6WWNSE9ER");
     </script>
     <meta charset="UTF-8" />
-    <title>ShinodaLabs - Protifólio</title>
+    <title>ShinodaLabs - Portifólio Pessoal de Projetos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
+    <meta name="description" content="Site para você conhecer um pouco quem eu sou e conhecer meus projetos." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Portifólio - ShinodaLabs" />
+    <meta property="og:title" content="ShinodaLabs - Portifólio Pessoal de Projetos" />
     <meta
       property="og:description"
-      content="Site for you to know a little who I am and know my projects."
+      content="Site para você conhecer um pouco quem eu sou e conhecer meus projetos."
     />
     <meta property="og:url" content="https://shinodalabs.com.br" />
     <meta
       property=" og:image"
-      content="https://shinodalabs.com.br/assets/images/favicon.png"
+      content="https://shinodalabs.com.br/assets/images/favicon.jpg"
     />
     <!-- <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
@@ -103,6 +108,8 @@
       sizes="16x16"
       href="assets/favicon/favicon-16x16.png"
     />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon//favicon.ico" type="image/x-icon">
     <link rel="manifest" href="assets/favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta
@@ -116,51 +123,54 @@
   </head>
 
   <body>
-    <!-- Menu -->
-    <header class="header fadeInDown" data-anime="200">
-      <div class="container">
-        <a href="index.html" class="grid-3 logo">ShinodaLabs</a>
-        <nav class="grid-13 header_menu">
-          <ul>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#resume">Currículo</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div class="bg_dark bg_top">
+      <!-- Menu -->
+      <header class="header fadeInDown" data-anime="200">
+        <div class="container">
+          <a href="#" class="grid-3 logo">ShinodaLabs</a>
+          <nav class="grid-13 header_menu">
+            <ul>
+              <li><a href="#hobbies">Hobbies</a></li>
+              <li><a href="#resume">Currículo</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-    <!-- Introduction -->
-    <section class="container">
-      <div class="avatar grid-16">
-        <img
-          src="assets/images/avatar.png"
-          alt="Avatar"
-          data-anime="400"
-          class="fadeInDown"
-        />
-      </div>
-      <div class="name grid-16 fadeInDown" data-anime="400">
-        <h2>Ou, eu sou o Rodrigo</h2>
-      </div>
-      <div class="introduction_title grid-16 fadeInDown" data-anime="800">
-        <h1>Desenvolvimento de sites responsivos e experiência.</h1>
-      </div>
-      <div class="introduction_subtitle grid-16 fadeInDown" data-anime="1200">
-        <h3>
-          Um jovem padawan quer se tornar um Jedi no desenvolvimento de sites.
-        </h3>
-      </div>
-      <div class="introduction_button grid-16 fadeInDown" data-anime="1600">
-        <a
-          href="https://www.linkedin.com/in/rodrigo-viegas-rodrigues-83315164/"
-          target="_blank"
-        >
-          <p>Conecte-se comigo</p>
-        </a>
-      </div>
-    </section>
+      <!-- Introduction -->
+      <section class="container">
+        <div class="avatar grid-16">
+          <img
+            src="assets/images/avatar.png"
+            alt="Avatar"
+            data-anime="400"
+            class="fadeInDown"
+            title="Avatar"
+          />
+        </div>
+        <div class="name grid-16 fadeInDown" data-anime="400">
+          <h2>Ou, eu sou o Rodrigo</h2>
+        </div>
+        <div class="introduction_title grid-16 fadeInDown" data-anime="800">
+          <h1>Desenvolvimento de sites responsivos e experiência.</h1>
+        </div>
+        <div class="introduction_subtitle grid-16 fadeInDown" data-anime="1200">
+          <h3>
+            Um jovem padawan quer se tornar um Jedi no desenvolvimento de sites.
+          </h3>
+        </div>
+        <div class="introduction_button grid-16 fadeInDown" data-anime="1600">
+          <a
+            href="https://www.linkedin.com/in/rodrigo-viegas-rodrigues-83315164/"
+            target="_blank"
+          >
+            <p>Conecte-se comigo</p>
+          </a>
+        </div>
+      </section>
+    </div>
 
     <!-- Hobbies -->
     <section class="container hobbies">
@@ -168,30 +178,31 @@
         <h2>Hobbies</h2>
       </div>
       <div class="hobbie_images grid-1-3">
-        <img src="assets/images/hobbie-moto.png" alt="Hobbie Moto" />
+        <img src="assets/images/hobbie-moto.jpg" alt="Hobbie Moto" title="Hobbie Moto" />
         <div class="hobbie_overlay">
           <div class="hobbie_text">
             <p>
-              Andar de moto é uma das minhas paixões, sempre que estou na estrada.
+              Andar de moto é uma das minhas paixões, sempre que possível estou na
+              estrada.
             </p>
           </div>
         </div>
       </div>
       <div class="hobbie_images grid-1-3">
-        <img src="assets/images/hobbie-game.png" alt="Hobbie Game" />
+        <img src="assets/images/hobbie-game.jpg" alt="Hobbie Game" title="Hobbie Games" />
         <div class="hobbie_overlay">
           <div class="hobbie_text">
             <p>
-              Sim, sou um "Gamer", sempre que posso reservo algum tempo para descansar e jogar.
+              "Mãe, jogo online não tem pause!!!"
             </p>
           </div>
         </div>
       </div>
       <div class="hobbie_images grid-1-3">
-        <img src="assets/images/hobbie-music.png" alt="Hobbie Music" />
+        <img src="assets/images/hobbie-music.jpg" alt="Hobbie Music" title="Hobbie Musica" />
         <div class="hobbie_overlay">
           <div class="hobbie_text">
-            <p>Amante daquele bom e velho rock and roll.</p>
+            <p>Amante daquele bom e velho Rock & Roll.</p>
           </div>
         </div>
       </div>
@@ -208,15 +219,19 @@
         <h3>Experiência De Trabalho</h3>
         <ul class="resume_item">
           <li>
-            <a href="https://www.lojaspompeia.com/" target="_blank" class="resume_item_title">
+            <a
+              href="https://www.lojaspompeia.com/"
+              target="_blank"
+              class="resume_item_title"
+            >
               <p>Lojas Pompéia</p>
-              <img src="assets/icons/link.svg" alt="Link Icon" />
+              <img src="assets/icons/link.svg" alt="Link Icon" title="Link" />
             </a>
             <div class="resume_item_subtitle">
-              <p>Assistente De Programação</p>
+              <p>Assistente de Programação</p>
             </div>
             <div class="resume_item_date">
-              <p>April, 2019 - Hoje</p>
+              <p>Abril, 2019 - Hoje</p>
             </div>
           </li>
         </ul>
@@ -225,9 +240,13 @@
         <h3>Educação</h3>
         <ul class="resume_item">
           <li>
-            <a href="http://www.camaqua.ifsul.edu.br/" target="_blank" class="resume_item_title">
+            <a
+              href="http://www.camaqua.ifsul.edu.br/"
+              target="_blank"
+              class="resume_item_title"
+            >
               <p>Instituto Federal do Rio Grande do Sul</p>
-              <img src="assets/icons/link.svg" alt="Link Icon" />
+              <img src="assets/icons/link.svg" alt="Link Icon" title="Link" />
             </a>
             <div class="resume_item_subtitle">
               <p>Análise e Desenvolvimento De Sistemas</p>
@@ -250,7 +269,7 @@
         </div>
         <div class="development skills_item">
           <ul>
-            <li>Development</li>
+            <li>Desenvolvimento</li>
             <li>Desenvolvimento de Front-End</li>
             <li>HTML5/CSS3/JS</li>
             <li>VueJS</li>
@@ -261,15 +280,19 @@
         <h3>Cursos Online</h3>
         <ul class="resume_item">
           <li>
-            <a href="https://www.origamid.com/" target="_blank" class="resume_item_title">
+            <a
+              href="https://www.origamid.com/"
+              target="_blank"
+              class="resume_item_title"
+            >
               <p>Origamid</p>
-              <img src="assets/icons/link.svg" alt="Link Icon" />
+              <img src="assets/icons/link.svg" alt="Link Icon" title="Link" />
             </a>
             <div class="resume_item_subtitle">
               <p>UI / UX Desing e Desenvolvimento De Sites</p>
             </div>
             <div class="resume_item_date">
-              <p>November, 2020 - Hoje</p>
+              <p>Novembro, 2020 - Hoje</p>
             </div>
           </li>
         </ul>
@@ -288,26 +311,28 @@
           <li>
             <a href="https://shinodalabs.com.br/amplify/" target="_blank">
               <div class="project_item_image">
-                <img src="assets/images/project.png" alt="Project Image" />
+                <img src="assets/images/project.jpg" alt="Project Image" title="Amplify" />
                 <div class="project_item_image_overlay">
                   <div class="project_item_image_overlay_icon">
-                    <img src="assets/icons/eye.png" alt="Icon eye" />
+                    <img src="assets/icons/eye.png" alt="Icon eye" title="Visualizar" />
                   </div>
                 </div>
               </div>
               <h3>Amplify - Digital Agency</h3>
               <p>
-                Este site foi criado com HTML5, CSS3 e JS colocando em prática a experiência adquirida no curso completo de webdesign da Origamid.
+                Este site foi criado com HTML5, CSS3 e JS colocando em prática a
+                experiência adquirida no curso completo de webdesign da
+                Origamid.
               </p>
             </a>
           </li>
           <!-- <li>
             <a href="https://shinodalabs.com.br/amplify/" target="_blank">
               <div class="project_item_image">
-                <img src="assets/images/project.png" alt="Project Image" />
+                <img src="assets/images/project.jpg" alt="Project Image" title="Amplify" />
                 <div class="project_item_image_overlay">
                   <div class="project_item_image_overlay_icon">
-                    <img src="assets/icons/eye.png" alt="Icon eye" />
+                    <img src="assets/icons/eye.png" alt="Icon eye" title="Visualizar" />
                   </div>
                 </div>
               </div>
@@ -324,26 +349,28 @@
           <li>
             <a href="https://shinodalabs.com.br/amplify/" target="_blank">
               <div class="project_item_image">
-                <img src="assets/images/project.png" alt="Project Image" />
+                <img src="assets/images/project.jpg" alt="Project Image" title="Amplify" />
                 <div class="project_item_image_overlay">
                   <div class="project_item_image_overlay_icon">
-                    <img src="assets/icons/eye.png" alt="Icon eye" />
+                    <img src="assets/icons/eye.png" alt="Icon eye" title="Visualizar" />
                   </div>
                 </div>
               </div>
               <h3>Amplify - Digital Agency</h3>
               <p>
-                Este site foi criado com HTML5, CSS3 e JS colocando em prática a experiência adquirida no curso completo de webdesign da Origamid.
+                Este site foi criado com HTML5, CSS3 e JS colocando em prática a
+                experiência adquirida no curso completo de webdesign da
+                Origamid.
               </p>
             </a>
           </li>
           <!-- <li>
             <a href="https://shinodalabs.com.br/amplify/" target="_blank">
               <div class="project_item_image">
-                <img src="assets/images/project.png" alt="Project Image" />
+                <img src="assets/images/project.jpg" alt="Project Image" title="Amplify" />
                 <div class="project_item_image_overlay">
                   <div class="project_item_image_overlay_icon">
-                    <img src="assets/icons/eye.png" alt="Icon eye" />
+                    <img src="assets/icons/eye.png" alt="Icon eye" title="Visualizar" />
                   </div>
                 </div>
               </div>
@@ -359,56 +386,59 @@
 
     <div class="separator"></div>
 
-    <!-- Contact -->
-    <section class="container contact">
-      <div class="grid-16">
-        <h1 id="contact">
-          Deixe-me saber se você deseja falar sobre uma potencial colaboração. Estou disponível para trabalhos freelance.
-        </h1>
-        <a href="#">
-          <h2>Clique aqui e vamos crescer juntos</h2>
-        </a>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="container footer">
-      <div class="line_separator grid-16"></div>
-      <div class="network grid-8">
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/MrShiinoda" target="_blank">
-              <img src="assets/icons/facebook.svg" alt="Facebook" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/mr_shinodaa/" target="_blank">
-              <img src="assets/icons/instagram.svg" alt="Instagram" />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/rodrigordgfs" target="_blank">
-              <img src="assets/icons/github.svg" alt="Github " />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/rodrigo-viegas-rodrigues-83315164/"
-              target="_blank"
-            >
-              <img src="assets/icons/linkedin.svg" alt="Linkedin" />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="email grid-8">
-        <div class="email_text">
-          <a href="mailto:rodrigo@shinodalabs.com.br">
-            <p>rodrigo@shinodalabs.com.br</p>
+    <div class="bg_dark bg_bottom">
+      <!-- Contact -->
+      <section class="container contact">
+        <div class="grid-16">
+          <h1 id="contact">
+            Deixe-me saber se você deseja falar sobre uma potencial colaboração.
+            Estou disponível para trabalhos freelance.
+          </h1>
+          <a href="#">
+            <h2>Clique aqui e vamos crescer juntos</h2>
           </a>
         </div>
-      </div>
-    </footer>
+      </section>
+
+      <!-- Footer -->
+      <footer class="container footer">
+        <div class="line_separator grid-16"></div>
+        <div class="network grid-8">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/MrShiinoda" target="_blank">
+                <img src="assets/icons/facebook.svg" alt="Facebook" title="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/mr_shinodaa/" target="_blank">
+                <img src="assets/icons/instagram.svg" alt="Instagram" title="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/rodrigordgfs" target="_blank">
+                <img src="assets/icons/github.svg" alt="Github" title="Github" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/rodrigo-viegas-rodrigues-83315164/"
+                target="_blank"
+              >
+                <img src="assets/icons/linkedin.svg" alt="Linkedin" title="Linkedin" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="email grid-8">
+          <div class="email_text">
+            <a href="mailto:rodrigo@shinodalabs.com.br">
+              <p>rodrigo@shinodalabs.com.br</p>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <div class="copyright">
       <p>2020 &copy; ShinodaLabs. Todos direitos reservados.</p>
