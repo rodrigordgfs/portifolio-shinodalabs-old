@@ -358,19 +358,19 @@ img {
   text-align: center;
 }
 
-.contact h1 {
+.contact h2 {
   color: #fff;
   width: 405px;
   margin: 0 auto;
 }
 
-.contact h2 {
+.contact h3 {
   color: #f3ceb1;
   margin: 40px 0 100px 0;
   transition: 0.3s;
 }
 
-.contact h2:hover {
+.contact h3:hover {
   color: #fff;
 }
 
