@@ -237,6 +237,7 @@ img {
 .resume_item_title p {
   color: #fff;
   font-size: 1.375em;
+  line-height: 30px;
   display: inline;
 }
 
