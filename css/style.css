@@ -1,4 +1,8 @@
 /* General Styles */
+.html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #0d0e10;
 }
@@ -25,6 +29,7 @@ img {
 .section_title {
   font-family: "kontora-semi-bold", sans-serif;
   font-size: 2.125em;
+  line-height: 48px;
   color: #fff;
   text-transform: capitalize;
 }
@@ -91,6 +96,8 @@ img {
 
 /* Introduction */
 .avatar img {
+  width: 200px;
+  height: 200px;
   margin: 0 auto;
   margin-top: 100px;
 }
@@ -119,6 +126,7 @@ img {
 .introduction_subtitle {
   text-align: center;
   font-size: 1.75em;
+  line-height: 40px;
   color: #9ca4b1;
   font-family: "kontora-medium", sans-serif;
   margin-top: 40px;
@@ -188,7 +196,8 @@ img {
 .hobbie_text {
   color: #fff;
   font-family: "kontora-semi-bold", sans-serif;
-  font-size: 20px;
+  font-size: 1.25em;
+  line-height: 28px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -349,12 +358,14 @@ img {
   font-family: "kontora-medium", sans-serif;
   color: #9ca4b1;
   font-size: 0.875em;
+  line-height: 20px;
 }
 
 /* Contact */
 .contact {
   font-family: "kontora-semi-bold", sans-serif;
   font-size: 2.125em;
+  line-height: 48px;
   text-align: center;
 }
 
