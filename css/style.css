@@ -256,10 +256,6 @@ img {
   text-transform: initial;
 }
 
-.resume_item_subtitle p:hover {
-  color: #f3ceb1;
-}
-
 .resume_item_date {
   color: #9ca4b1;
   font-size: 1em;
