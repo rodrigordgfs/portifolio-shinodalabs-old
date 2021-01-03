@@ -1,3 +1,12 @@
+/*
+Theme Name: Shinodalabs
+Theme URI: https://shinodalabs.com.br
+Author: Rodrigo Viegas Rodrigues
+Author URI: https://shinodalabs.com.br
+Description: Tema criado para o site ShinodaLabs
+Version: 1.0
+*/
+
 /* General Styles */
 .html {
   scroll-behavior: smooth;
@@ -225,13 +234,17 @@ img {
   height: 3px;
   background: #f3ceb1;
   display: block;
-  margin-top: 5px
+  margin-top: 5px;
 }
 
 .resume_item {
   margin-top: 30px;
   font-family: "kontora-semi-bold", sans-serif;
   text-transform: capitalize;
+}
+
+.resume_item li {
+  margin-top: 15px;
 }
 
 .resume_item_title p {
@@ -259,6 +272,10 @@ img {
 .resume_item_date {
   color: #9ca4b1;
   font-size: 1em;
+}
+
+.resume_item_list ul li {
+  margin-bottom: 10px;
 }
 
 .resume_item_list ul li a {
@@ -304,15 +321,11 @@ img {
   height: 3px;
   background: #f3ceb1;
   display: block;
-  margin-top: 5px
+  margin-top: 5px;
 }
 
 .projects .section_title {
   margin-bottom: 40px;
-}
-
-.projects_right {
-  margin-top: 150px;
 }
 
 .project_item li {
