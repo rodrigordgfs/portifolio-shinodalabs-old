@@ -15,42 +15,33 @@
         gtag("config", "G-P6WWNSE9ER");
     </script>
     <meta charset="UTF-8" />
-    <title><?php bloginfo('name'); ?></title>
-    <meta name="author" content="Rodrigo Viegas Rodrigues">
-    <meta name="keywords" content="web,website,portfolio,desenvolvimento,html,css,javascript,freelancer,freela,social,media,rede,social,design,ui,ux,world,ola,mundo,front,end,developer,back,end,start,future,brasil,porto,alegre,camaqua,rio,grande,do,sul">
+    <title><?php bloginfo('name'); ?> <?php wp_title('-'); ?></title>
+    <meta name="author" content="<?php the_field('author') ?>">
+    <meta name="keywords" content="<?php the_field('tags') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="ShinodaLabs- Front End Developer - UX UI Design" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="<?php the_field('description_seo') ?>" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="ShinodaLabs - Portifólio Pessoal de Projetos" />
-    <meta property="og:url" content="https://shinodalabs.com.br" />
-    <meta property="og:image" content="https://shinodalabs.com.br/assets/images/picture.jpg" />
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/fonts.css" />
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/normalize.css" />
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/reset.css" />
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/grid.css" />
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" />
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/responsive.css" />
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/simple-anime.css" />
-    <!-- <link rel="stylesheet" href="css/style-min.css" /> -->
-    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/favicon-16x16.png" />
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon//favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/manifest.json" />
+    <meta property="og:title" content="<?php the_field('og_title_seo') ?>" />
+    <meta property="og:url" content="<?php bloginfo('url') ?>" />
+    <meta property="og:image" content="<?php the_field('og_image_seo') ?>" />
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/favicon-16x16.png" />
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/favicon//favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/ms-icon-144x144.png" />
+    <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/assets/favicon/ms-icon-144x144.png" />
     <meta name="theme-color" content="#f3ceb1" />
     <script>
         document.documentElement.classList.add("js");

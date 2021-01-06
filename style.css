@@ -7,6 +7,13 @@ Description: Tema criado para o site ShinodaLabs
 Version: 1.0
 */
 
+/* Importa os CSS */
+@import 'css/fonts.css';
+@import 'css/normalize.css';
+@import 'css/reset.css';
+@import 'css/grid.css';
+@import 'css/simple-anime.css';
+
 /* General Styles */
 .html {
   scroll-behavior: smooth;
@@ -324,15 +331,21 @@ img {
   margin-top: 5px;
 }
 
+.projects_right {
+  margin-top: 150px;
+}
+
 .projects .section_title {
   margin-bottom: 40px;
 }
 
-.project_item li {
+.projects_right .project_item li,
+.projects_left .project_item li {
   margin-bottom: 20px;
 }
 
-.project_item img {
+.projects_right .project_item .project_image,
+.projects_left .project_item .project_image {
   border: 1px solid #9ca4b1;
 }
 
@@ -451,4 +464,114 @@ img {
   font-family: "kontora-medium", sans-serif;
   color: #0d0e10;
   text-align: center;
+}
+
+/* Responsivo */
+
+/* Tablets */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .skills .development {
+    margin-left: 20px;
+    display: inline-block;
+  }
+}
+
+/* Smartphone */
+@media only screen and (max-width: 787px) {
+  /* Header */
+  .logo {
+    margin-left: 80px;
+  }
+
+  .header a {
+    margin-bottom: 20px;
+  }
+
+  .header_menu {
+    text-align: center;
+  }
+
+  .header_menu ul {
+    margin-top: 30px;
+  }
+
+  .header_menu ul li a {
+    border: 3px solid #f3ceb1;
+    padding: 5px;
+    width: 136px;
+    display: block;
+    float: left;
+    text-align: center;
+  }
+
+  .header_menu ul li {
+    margin-left: 10px;
+    margin-top: -10px;
+  }
+
+  /* Introduction */
+  .avatar img {
+    margin-top: 10px;
+  }
+
+  .introduction_title {
+    font-size: 2.50em;
+  }
+
+  .introduction_title h1 {
+    margin: 0;
+    width: auto;
+  }
+
+  .introduction_subtitle {
+    font-size: 1.25em;
+  }
+
+  .introduction_subtitle h3 {
+    width: 300px;
+  }
+
+  .header_menu ul li a:hover {
+    border-color: #fff;
+  }
+
+  /* Resume */
+  .skills .development {
+    margin-left: 0px;
+    display: inline-block;
+  }
+
+  /* Projects */
+  .projects_right {
+    margin-top: 0px;
+  }
+
+  /* Contact */
+
+  .contact h2 {
+    width: auto;
+    margin: 0;
+  }
+
+  .contact h3 {
+    margin-bottom: 80px;
+  }
+
+  /* Fotter */
+  .footer {
+    margin-bottom: 25px;
+  }
+
+  .network ul {
+    text-align: center;
+  }
+
+  .email_text {
+    float: none;
+    text-align: center;
+  }
+
+  .email {
+    margin-top: 20px;
+  }
 }
