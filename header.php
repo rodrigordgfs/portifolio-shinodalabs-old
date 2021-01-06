@@ -54,7 +54,7 @@
         <!-- Menu -->
         <header class="header fadeInDown" data-anime="200">
             <div class="container">
-                <a href="#" class="grid-3 logo">ShinodaLabs</a>
+                <a href="<?php bloginfo('url') ?>" class="grid-3 logo">ShinodaLabs</a>
                 <nav class="grid-13 header_menu">
                     <ul>
                         <li><a href="#hobbies">Hobbies</a></li>
