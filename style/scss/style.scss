@@ -1,5 +1,45 @@
 @import "normalize";
 @import "reset";
+@import "fonts";
 
+$montserrat: 'Montserrat', sans-serif;
+$squanova: 'Squanova', sans-serif;
+
+$white: #FFFFFF;
+$black: #000000;
+
+#header {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    #header__brand {
+        font-family: $squanova;
+        color: $black;
+        letter-spacing: 1px;
+    }
+    #menu {
+        #menu__items {
+          display: flex;
+          gap: 20px;
+          li {
+            a {
+              display: block;
+              color: $black; 
+              font-family: $montserrat;
+              transition: 0.2s ease-in-out;
+            }
+          }
+        }
+        #btn-mobile {
+          display: none;
+        }
+    }
+}
 
 @import "responsive";
