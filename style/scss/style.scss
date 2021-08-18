@@ -15,9 +15,9 @@ html {
 }
 
 #header {
-    max-width: 960px;
+    width: 80vw; 
     margin: 0 auto;
-    padding: 20px 20px;
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -26,6 +26,7 @@ html {
     box-sizing: border-box;
     #header__brand {
         font-family: $squanova;
+        font-size: 1.25rem;
         color: $black;
         letter-spacing: 1px;
         &:hover {
@@ -39,6 +40,7 @@ html {
           li {
             a {
               display: block;
+              font-size: 18px;
               color: $black; 
               font-family: $montserrat;
               transition: 0.2s ease-in-out;
@@ -61,48 +63,33 @@ html {
     justify-content: center;
     flex-wrap: nowrap;
     font-family: $montserrat;
-    padding: 0 20px;
-    margin-top: 20px;
-    #presentation__user_image {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        // border: 7px solid $black;
-        // padding: 5px;
-        transition: 0.2s ease-in-out;
-        img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%
-        }
-        &:hover {
-            border-color: $gray;
-        }
-    }
+    height: calc(100vh - 60px);
     h2 {
         color: $black;
+        font-size: 1.125rem;
         font-weight: 700;
-        margin-top: 20px;;
+        margin-top: -60px;
     }
     h1 {
         color: $black;
         font-size: 4rem;
         font-weight: 700;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     p {
         color: $black;
         margin-top: 20px;
         text-align: center;
+        max-width: 600px;
     }
     button {
         background-color: $black;
         color: $white;
         border: none;      
         text-transform: uppercase;
-        padding: 10px;
-        margin-top: 20px;
+        padding: 15px 20px;
+        margin-top: 40px;
         cursor: pointer;
         transition: 0.2s ease-in-out;
         &:hover {
@@ -129,12 +116,11 @@ html {
 }
 
 #projects {
-    max-width: 960px;
+    width: 80vw; 
     margin: 0 auto;
     display: flex;
     flex-direction: column; 
     font-family: $montserrat;
-    padding: 0 20px;
     margin-top: 100px;
     #projects__grid {
         display: flex;
@@ -145,45 +131,53 @@ html {
         gap: 10px;
         margin-top: 50px;
         .project__item {
-            flex: 1 1 49%;
-            border-radius: 5px;
+            flex: 1 1 32%; 
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.40);
+            overflow: hidden;
             img {
                 max-width: 100%;
-                border-radius: 5px;
                 display: block;
+                transition: 0.4s ease-in-out;
+            }
+            &:hover > img {
+                transform: scale(1.3);
             }
             .project__item_overlay {
                 position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
+                inset: 0; 
                 height: 100%;
                 width: 100%;
                 opacity: 0;
                 transition: 0.2s ease-in-out;
-                background-color: rgba(200, 45, 23w, 0.8);
-                border-radius: 5px;
-                overflow: hidden;
-                .project__item_overlay_text {
-                    a {
-                        color: white;
-                        font-size: 1.25rem;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        -webkit-transform: translate(-50%, -50%);
-                        -ms-transform: translate(-50%, -50%);
-                        transform: translate(-50%, -50%);
-                        text-align: center;
-                        cursor: pointer;
-                        padding: 40px;
+                background-color: rgba(200, 45, 23, 0.8);
+                .project__item_overlay_content {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 10px;
+                    inset: 0;
+                    h2 {
+                        color: $white;
                         text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 18px;
+                    }
+                    p {
+                        color: $white;
+                        text-align: center;
+                        padding: 10px 0;
+                    }
+                    a {
+                        color: $white;
+                        background-color: $black;
+                        text-transform: uppercase;
+                        padding: 10px 50px;
                     }
                 }
                 &:hover {
