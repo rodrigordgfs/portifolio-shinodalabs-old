@@ -206,6 +206,7 @@ html {
         h2 {
             font-size: 48px;
             font-weight: 700;
+            text-transform: uppercase;
         }
         p {
             line-height: 20px;
@@ -219,6 +220,31 @@ html {
         justify-content: center;
         img {
             box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.40);
+        }
+    }
+}
+
+#skills {
+    width: 80vw;
+    margin: 0 auto;
+    #skills__carousel {
+        margin-top: 40px;
+        .skills__carousel_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.40);
+            margin: 10px 10px;
+            img {
+                width: 60px;
+                height: 60px;
+                padding-top: 10px; 
+            }
+            p {
+                font-family: $montserrat;
+                padding: 10px 0 ;
+            }
         }
     }
 }

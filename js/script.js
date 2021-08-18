@@ -51,6 +51,16 @@ window.addEventListener("scroll", () => {
   }
 });
 
+new ElderCarousel('#skills__carousel',{ 
+  items: 7,
+  step: 2,
+  play: true,
+  infinite: true,
+  playInterval: 3000,
+  speed: 500,
+  navs: false
+});
+
 btnMobile.addEventListener("click", toogleMenu);
 btnMobile.addEventListener("touchStart", toogleMenu);
 menuItems.addEventListener("click", toogleItemMenu);
