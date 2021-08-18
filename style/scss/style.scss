@@ -28,6 +28,9 @@ html {
         font-family: $squanova;
         color: $black;
         letter-spacing: 1px;
+        &:hover {
+            color: $red;
+        }
     }
     #menu {
         #menu__items {
@@ -148,7 +151,7 @@ html {
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.67);
+            box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.40);
             img {
                 max-width: 100%;
                 border-radius: 5px;
@@ -180,6 +183,7 @@ html {
                         text-align: center;
                         cursor: pointer;
                         padding: 40px;
+                        text-transform: uppercase;
                     }
                 }
                 &:hover {
