@@ -7,6 +7,12 @@ $squanova: 'Squanova', sans-serif;
 
 $white: #FFFFFF;
 $black: #000000;
+$gray: #808080;
+$red: #C82D35;
+
+html {
+    scroll-behavior: smooth;
+}
 
 #header {
     max-width: 960px;
@@ -33,11 +39,153 @@ $black: #000000;
               color: $black; 
               font-family: $montserrat;
               transition: 0.2s ease-in-out;
+              &:hover { 
+                  color: $red;
+              }
             }
           }
         }
         #btn-mobile {
           display: none;
+        }
+    }
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-family: $montserrat;
+    padding: 0 20px;
+    margin-top: 20px;
+    #presentation__user_image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        // border: 7px solid $black;
+        // padding: 5px;
+        transition: 0.2s ease-in-out;
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%
+        }
+        &:hover {
+            border-color: $gray;
+        }
+    }
+    h2 {
+        color: $black;
+        font-weight: 700;
+        margin-top: 20px;;
+    }
+    h1 {
+        color: $black;
+        font-size: 4rem;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 20px;
+    }
+    p {
+        color: $black;
+        margin-top: 20px;
+        text-align: center;
+    }
+    button {
+        background-color: $black;
+        color: $white;
+        border: none;      
+        text-transform: uppercase;
+        padding: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        &:hover {
+            background-color: $red;
+        }
+    }
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    color: $black;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $montserrat;
+    &::after {
+        content: '';
+        display: block;
+        width: 200px;
+        height: 4px;
+        background-color: $red;
+        margin: 0 auto;
+    }
+}
+
+#projects {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; 
+    font-family: $montserrat;
+    padding: 0 20px;
+    margin-top: 100px;
+    #projects__grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 50px;
+        .project__item {
+            flex: 1 1 49%;
+            border-radius: 5px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.67);
+            img {
+                max-width: 100%;
+                border-radius: 5px;
+                display: block;
+            }
+            .project__item_overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: 0.2s ease-in-out;
+                background-color: rgba(200, 45, 23w, 0.8);
+                border-radius: 5px;
+                overflow: hidden;
+                .project__item_overlay_text {
+                    a {
+                        color: white;
+                        font-size: 1.25rem;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        cursor: pointer;
+                        padding: 40px;
+                    }
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
     }
 }
