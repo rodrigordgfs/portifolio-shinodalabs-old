@@ -4,6 +4,7 @@
     <presentation />
     <projects />
     <about />
+    <skills />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import HeaderMenu from "@/components/Header/Header"
 import Presentation from "@/components/Presentation/Presentation"
 import Projects from "@/components/Projects/Projects"
 import About from "@/components/About/About"
+import Skills from "@/components/Skills/Skills"
 
 export default {
   name: "home",
@@ -22,6 +24,7 @@ export default {
     Presentation,
     Projects,
     About,
+    Skills,
   }
 };
 </script>
