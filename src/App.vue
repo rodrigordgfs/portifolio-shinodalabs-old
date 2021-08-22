@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <background-effects></background-effects>
+    <!-- <background-effects></background-effects> -->
+    <home></home>
   </div>
 </template>
 
 <script>
-import BackgroundEffects from "@/components/BackgroundEffects.vue";
-
+// import BackgroundEffects from "@/components/BackgroundEffects.vue";
+import Home from "./views/Home.vue"
 export default {
   name: "App",
   components: {
-    BackgroundEffects,
+    // BackgroundEffects,
+    Home
   },
 };
 </script>
