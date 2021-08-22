@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <!-- <background-effects></background-effects> -->
-    <home></home>
+    <!-- <background-effects /> -->
+    <home />
   </div>
 </template>
 
@@ -12,13 +12,13 @@ export default {
   name: "App",
   components: {
     // BackgroundEffects,
-    Home
+    Home,
   },
 };
 </script>
 
 <style lang="scss">
 background-effects {
-  position: absolute;
+  /* position: absolute; */
 }
 </style>
