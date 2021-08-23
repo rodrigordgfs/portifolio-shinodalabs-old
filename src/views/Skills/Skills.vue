@@ -6,7 +6,7 @@
       timing-function="cubic-bezier(0.06, 0.29, 0.19, 1.4)"
     >
       <split-carousel-item v-for="item in SkillItems" :key="item.title">
-        <skill-item :title="item.title" :image="item.image" />
+        <skill-item :alt="item.title" :image="item.image" />
       </split-carousel-item>
     </split-carousel>
   </section>
@@ -29,87 +29,87 @@ export default {
     return {
       SkillItems: [
         {
-          title: "HTML 5",
+          alt: "HTML 5",
           image:
             "https://raw.githubusercontent.com/devicons/devicon/c5378d6c2510ffa0b3e4475af95618a8048d6cf1/icons/html5/html5-original.svg",
         },
         {
-          title: "CSS 3",
+          alt: "CSS 3",
           image:
             "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
         },
         {
-          title: "SASS / SCSS",
+          alt: "SASS / SCSS",
           image:
             "https://camo.githubusercontent.com/26901b819fb10ef4e2c652aa40e24775247664d84a7597bebb66898a24dddedd/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f736173732f736173732d6f726967696e616c2e737667",
         },
         {
-          title: "Javascript",
+          alt: "Javascript",
           image:
             "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
         },
         {
-          title: "NodeJS",
+          alt: "NodeJS",
           image:
             "https://raw.githubusercontent.com/devicons/devicon/c5378d6c2510ffa0b3e4475af95618a8048d6cf1/icons/nodejs/nodejs-original.svg",
         },
         {
-          title: "GitHub",
+          alt: "GitHub",
           image:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
         },
         {
-          title: "Git",
+          alt: "Git",
           image:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
         },
         {
-          title: "Sequelize",
+          alt: "Sequelize",
           image:
             "https://raw.githubusercontent.com/devicons/devicon/master/icons/sequelize/sequelize-original.svg",
         },
         {
-          title: "NPM",
+          alt: "NPM",
           image:
             "https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg",
         },
         {
-          title: "Express",
+          alt: "Express",
           image:
             "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
         },
         {
-          title: "MySQL",
+          alt: "MySQL",
           image:
             "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
         },
         {
-          title: "Angular",
+          alt: "Angular",
           image:
             "https://camo.githubusercontent.com/4f9985e75ef6d08199712ad2b1f822e5534fe876c52b010026c04a1714fa3d59/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f616e67756c61726a732f616e67756c61726a732d6f726967696e616c2e737667",
         },
         {
-          title: "Bitbucket",
+          alt: "Bitbucket",
           image:
             "https://camo.githubusercontent.com/4bf839c39c7867c0208f2df1af6025910012516dec40deaea960d1e4d60a0dec/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6269746275636b65742f6269746275636b65742d6f726967696e616c2e737667",
         },
         {
-          title: "Python",
+          alt: "Python",
           image:
             "https://camo.githubusercontent.com/dd8b0601cdfefe534a6a26f4c29c7f8a5fcfc315002655f519c73121f7bad8bc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f707974686f6e2f707974686f6e2d6f726967696e616c2e737667",
         },
         {
-          title: "Figma",
+          alt: "Figma",
           image:
             "https://camo.githubusercontent.com/cdd289ae72f33665800bc6a63936d5afa0454214d520945780894151112a055f/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6669676d612f6669676d612d6f726967696e616c2e737667",
         },
         {
-          title: "AdobeXD",
+          alt: "AdobeXD",
           image:
             "https://camo.githubusercontent.com/25aa8aa364be926b7e35b3270b2af0ff47b1964bfe6802cfdf01396e305135f7/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f78642f78642d706c61696e2e737667",
         },
         {
-          title: "Visual Studio Code",
+          alt: "Visual Studio Code",
           image:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
         },
@@ -120,9 +120,7 @@ export default {
 </script>
 
 <style lang="scss">
-$white: #ffffff;
 $black: #000000;
-$gray: #808080;
 $red: #c82d35;
 $montserrat: "Montserrat", sans-serif;
 
@@ -133,6 +131,7 @@ $montserrat: "Montserrat", sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-family: $montserrat;
+  margin-bottom: 20px;
   &::after {
     content: "";
     display: block;
@@ -146,5 +145,9 @@ $montserrat: "Montserrat", sans-serif;
 #skills {
   width: 80vw;
   margin: 0 auto;
+  padding-bottom: 20px;
+}
+.skill-carousel {
+  padding: 20px 0;
 }
 </style>

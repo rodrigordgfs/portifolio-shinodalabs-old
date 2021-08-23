@@ -1,7 +1,6 @@
 <template>
   <div class="skill__item">
-    <img :src="image" :alt="title" />
-    <p>{{ title }}</p>
+    <img :src="image" :alt="alt" :title="alt" />
   </div>
 </template>
 
@@ -14,7 +13,7 @@ export default {
       type: String,
       required: true,
     },
-    title: {
+    alt: {
       type: String,
       required: true,
     },
@@ -34,16 +33,11 @@ $montserrat: "Montserrat", sans-serif;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.4);
-  margin: 10px 10px;
+  /* margin: 10px 10px; */
   img {
     width: 60px;
     height: 60px;
     padding-top: 10px;
-  }
-  p {
-    font-family: $montserrat;
-    padding: 10px 0;
   }
 }
 </style>

@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <home />
     <!-- <background-effects id="back-effect" /> -->
+    <home />
   </div>
 </template>
 
 <script>
 // import BackgroundEffects from "@/components/BackgroundEffects.vue";
-import Home from "./views/Home.vue"
+import Home from "./views/Home.vue";
 export default {
   name: "App",
   components: {
@@ -20,7 +20,9 @@ export default {
 <style lang="scss">
 #back-effect {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
 }
 </style>
