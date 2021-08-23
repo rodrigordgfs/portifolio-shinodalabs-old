@@ -27,23 +27,23 @@ export default {
       menuItems: [
         {
           name: "Projetos",
-          link: "#projects"
+          link: "#projects",
         },
         {
           name: "Sobre min",
-          link: "#about"
+          link: "#about",
         },
         {
           name: "Habilidade",
-          link: "#skills"
+          link: "#skills",
         },
         {
           name: "Contato",
-          link: "#contacts"
+          link: "#contacts",
         },
-      ]
-    }
-  }
+      ],
+    };
+  },
 };
 </script>
 

@@ -19,11 +19,11 @@ export default {
 </script>
 
 <style lang="scss">
-$white: #FFFFFF;
+$white: #ffffff;
 $black: #111111;
 $gray: #808080;
-$red: #C82D35;
-$montserrat: 'Montserrat', sans-serif;
+$red: #c82d35;
+$montserrat: "Montserrat", sans-serif;
 #background {
   background-color: #111111;
   #header {
