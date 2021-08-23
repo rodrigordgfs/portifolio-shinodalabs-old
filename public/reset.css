@@ -12,7 +12,7 @@ html {
     -webkit-text-size-adjust: 100%;
     /* 2 */
   }
-  
+
   /* Sections
          ========================================================================== */
   /**
@@ -22,7 +22,7 @@ html {
   body {
     margin: 0;
   }
-  
+
   /**
        * Render the `main` element consistently in IE.
        */
@@ -30,7 +30,7 @@ html {
   main {
     display: block;
   }
-  
+
   /**
        * Correct the font size and margin on `h1` elements within `section` and
        * `article` contexts in Chrome, Firefox, and Safari.
@@ -40,7 +40,7 @@ html {
     font-size: 2em;
     margin: 0.67em 0;
   }
-  
+
   /* Grouping content
          ========================================================================== */
   /**
@@ -56,7 +56,7 @@ html {
     overflow: visible;
     /* 2 */
   }
-  
+
   /**
        * 1. Correct the inheritance and scaling of font size in all browsers.
        * 2. Correct the odd `em` font sizing in all browsers.
@@ -68,7 +68,7 @@ html {
     font-size: 1em;
     /* 2 */
   }
-  
+
   /* Text-level semantics
          ========================================================================== */
   /**
@@ -78,7 +78,7 @@ html {
   a {
     background-color: transparent;
   }
-  
+
   /**
        * 1. Remove the bottom border in Chrome 57-
        * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -92,7 +92,7 @@ html {
     text-decoration: underline dotted;
     /* 2 */
   }
-  
+
   /**
        * Add the correct font weight in Chrome, Edge, and Safari.
        */
@@ -101,7 +101,7 @@ html {
   strong {
     font-weight: bolder;
   }
-  
+
   /**
        * 1. Correct the inheritance and scaling of font size in all browsers.
        * 2. Correct the odd `em` font sizing in all browsers.
@@ -115,7 +115,7 @@ html {
     font-size: 1em;
     /* 2 */
   }
-  
+
   /**
        * Add the correct font size in all browsers.
        */
@@ -123,7 +123,7 @@ html {
   small {
     font-size: 80%;
   }
-  
+
   /**
        * Prevent `sub` and `sup` elements from affecting the line height in
        * all browsers.
@@ -136,17 +136,17 @@ html {
     position: relative;
     vertical-align: baseline;
   }
-  
+
   /* line 133, ../Users/rodrigoviegas/GIT/Outros/portifolio-shinoda-labs-v2/style/scss/_normalize.scss */
   sub {
     bottom: -0.25em;
   }
-  
+
   /* line 137, ../Users/rodrigoviegas/GIT/Outros/portifolio-shinoda-labs-v2/style/scss/_normalize.scss */
   sup {
     top: -0.5em;
   }
-  
+
   /* Embedded content
          ========================================================================== */
   /**
@@ -156,7 +156,7 @@ html {
   img {
     border-style: none;
   }
-  
+
   /* Forms
          ========================================================================== */
   /**
@@ -178,7 +178,7 @@ html {
     margin: 0;
     /* 2 */
   }
-  
+
   /**
        * Show the overflow in IE.
        * 1. Show the overflow in Edge.
@@ -189,7 +189,7 @@ html {
     /* 1 */
     overflow: visible;
   }
-  
+
   /**
        * Remove the inheritance of text transform in Edge, Firefox, and IE.
        * 1. Remove the inheritance of text transform in Firefox.
@@ -200,7 +200,7 @@ html {
     /* 1 */
     text-transform: none;
   }
-  
+
   /**
        * Correct the inability to style clickable types in iOS and Safari.
        */
@@ -211,7 +211,7 @@ html {
   [type="submit"] {
     -webkit-appearance: button;
   }
-  
+
   /**
        * Remove the inner border and padding in Firefox.
        */
@@ -223,7 +223,7 @@ html {
     border-style: none;
     padding: 0;
   }
-  
+
   /**
        * Restore the focus styles unset by the previous rule.
        */
@@ -234,7 +234,7 @@ html {
   [type="submit"]:-moz-focusring {
     outline: 1px dotted ButtonText;
   }
-  
+
   /**
        * Correct the padding in Firefox.
        */
@@ -242,7 +242,7 @@ html {
   fieldset {
     padding: 0.35em 0.75em 0.625em;
   }
-  
+
   /**
        * 1. Correct the text wrapping in Edge and IE.
        * 2. Correct the color inheritance from `fieldset` elements in IE.
@@ -264,7 +264,7 @@ html {
     white-space: normal;
     /* 1 */
   }
-  
+
   /**
        * Add the correct vertical alignment in Chrome, Firefox, and Opera.
        */
@@ -272,7 +272,7 @@ html {
   progress {
     vertical-align: baseline;
   }
-  
+
   /**
        * Remove the default vertical scrollbar in IE 10+.
        */
@@ -280,7 +280,7 @@ html {
   textarea {
     overflow: auto;
   }
-  
+
   /**
        * 1. Add the correct box sizing in IE 10.
        * 2. Remove the padding in IE 10.
@@ -293,7 +293,7 @@ html {
     padding: 0;
     /* 2 */
   }
-  
+
   /**
        * Correct the cursor style of increment and decrement buttons in Chrome.
        */
@@ -302,7 +302,7 @@ html {
   [type="number"]::-webkit-outer-spin-button {
     height: auto;
   }
-  
+
   /**
        * 1. Correct the odd appearance in Chrome and Safari.
        * 2. Correct the outline style in Safari.
@@ -314,7 +314,7 @@ html {
     outline-offset: -2px;
     /* 2 */
   }
-  
+
   /**
        * Remove the inner padding in Chrome and Safari on macOS.
        */
@@ -322,7 +322,7 @@ html {
   [type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
   }
-  
+
   /**
        * 1. Correct the inability to style clickable types in iOS and Safari.
        * 2. Change font properties to `inherit` in Safari.
@@ -334,7 +334,7 @@ html {
     font: inherit;
     /* 2 */
   }
-  
+
   /* Interactive
          ========================================================================== */
   /*
@@ -344,7 +344,7 @@ html {
   details {
     display: block;
   }
-  
+
   /*
        * Add the correct display in all browsers.
        */
@@ -352,7 +352,7 @@ html {
   summary {
     display: list-item;
   }
-  
+
   /* Misc
          ========================================================================== */
   /**
@@ -362,7 +362,7 @@ html {
   template {
     display: none;
   }
-  
+
   /**
        * Add the correct display in IE 10.
        */
@@ -370,7 +370,7 @@ html {
   [hidden] {
     display: none;
   }
-  
+
   /* ==========================================================================
      Reset
      ========================================================================== */
@@ -381,7 +381,7 @@ html {
   a {
     text-decoration: none;
   }
-  
+
   /**
    * Remove list-style
    */
@@ -389,7 +389,7 @@ html {
   ol, ul {
     list-style: none;
   }
-  
+
   /* line 21, ../Users/rodrigoviegas/GIT/Outros/portifolio-shinoda-labs-v2/style/scss/_reset.scss */
   html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
     margin: 0;
@@ -397,11 +397,11 @@ html {
     border: 0;
     vertical-align: baseline;
   }
-  
+
   /* line 28, ../Users/rodrigoviegas/GIT/Outros/portifolio-shinoda-labs-v2/style/scss/_reset.scss */
   h1, h2, h3, h4, h5, h6, p, a, ul {
     font-size: 1em;
     font-weight: normal;
   }
-  
+
   /*# sourceMappingURL=style.css.map */
