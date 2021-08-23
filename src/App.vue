@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <!-- <background-effects /> -->
     <home />
+    <!-- <background-effects id="back-effect" /> -->
   </div>
 </template>
 
@@ -18,7 +18,9 @@ export default {
 </script>
 
 <style lang="scss">
-background-effects {
-  /* position: absolute; */
+#back-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 </style>

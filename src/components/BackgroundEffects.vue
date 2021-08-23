@@ -98,7 +98,7 @@ export default {
         background-color: rgba(64, 255, 0, 0.3);
       }
       &:nth-child(10) {
-        left: 90%;
+        /* left: 90%; */
         width: 160px;
         height: 160px;
         animation-delay: 11s;

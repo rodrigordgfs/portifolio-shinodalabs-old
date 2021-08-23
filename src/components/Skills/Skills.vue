@@ -4,17 +4,11 @@
     <split-carousel
       :display-amount="8"
       timing-function="cubic-bezier(0.06, 0.29, 0.19, 1.4)"
-      arrow-visible="false"
     >
       <split-carousel-item v-for="item in SkillItems" :key="item.title">
         <skill-item :title="item.title" :image="item.image" />
       </split-carousel-item>
     </split-carousel>
-    <!-- <split-carousel>
-      <split-carousel-item v-for="item in 8" :key="item">
-        {{ item }}
-      </split-carousel-item>
-    </split-carousel> -->
   </section>
 </template>
 
