@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss">
 $white: #ffffff;
-$black: #000000;
+$black: #111111;
 $gray: #808080;
 $red: #c82d35;
 $montserrat: "Montserrat", sans-serif;

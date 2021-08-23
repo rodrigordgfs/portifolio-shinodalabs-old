@@ -20,8 +20,8 @@ export default {
 
 <style lang="scss">
 $white: #ffffff;
-$black: #000000;
-$gray: #808080;
+$black: #111111;
+$gray: #cccccc;
 $red: #c82d35;
 $montserrat: "Montserrat", sans-serif;
 
@@ -32,29 +32,30 @@ $montserrat: "Montserrat", sans-serif;
   justify-content: center;
   flex-wrap: nowrap;
   font-family: $montserrat;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 40px);
+  background-color: $black;
   h2 {
-    color: $black;
+    color: $white;
     font-size: 1.125rem;
     font-weight: 700;
     margin-top: -60px;
   }
   h1 {
-    color: $black;
+    color: $white;
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
     margin-top: 30px;
   }
   p {
-    color: $black;
+    color: $gray;
     margin-top: 20px;
     text-align: center;
     max-width: 600px;
   }
   button {
-    background-color: $black;
-    color: $white;
+    background-color: $white;
+    color: $black;
     border: none;
     text-transform: uppercase;
     padding: 15px 20px;

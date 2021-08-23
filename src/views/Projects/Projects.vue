@@ -94,7 +94,7 @@ export default {
 
 <style lang="scss">
 $white: #ffffff;
-$black: #000000;
+$black: #111111;
 $gray: #808080;
 $red: #c82d35;
 $montserrat: "Montserrat", sans-serif;
@@ -123,6 +123,7 @@ $montserrat: "Montserrat", sans-serif;
   flex-direction: column;
   font-family: $montserrat;
   margin-top: 100px;
+  padding-bottom: 110px;
   #projects__grid {
     display: flex;
     flex-direction: row;
@@ -130,7 +131,7 @@ $montserrat: "Montserrat", sans-serif;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 </style>

@@ -11,12 +11,12 @@
 
 <script>
 
-import HeaderMenu from "@/components/Header/Header"
-import Presentation from "@/components/Presentation/Presentation"
-import Projects from "@/components/Projects/Projects"
-import About from "@/components/About/About"
-import Skills from "@/components/Skills/Skills"
-import FooterApp from "@/components/Footer/Footer"
+import HeaderMenu from "./Header/Header"
+import Presentation from "./Presentation/Presentation"
+import Projects from "./Projects/Projects"
+import About from "./About/About"
+import Skills from "./Skills/Skills"
+import FooterApp from "./Footer/Footer"
 
 export default {
   name: "home",
@@ -32,4 +32,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+
+</style>

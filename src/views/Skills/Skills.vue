@@ -120,7 +120,7 @@ export default {
 </script>
 
 <style lang="scss">
-$black: #000000;
+$black: #111111;
 $red: #c82d35;
 $montserrat: "Montserrat", sans-serif;
 
@@ -145,9 +145,6 @@ $montserrat: "Montserrat", sans-serif;
 #skills {
   width: 80vw;
   margin: 0 auto;
-  padding-bottom: 20px;
-}
-.skill-carousel {
-  padding: 20px 0;
+  padding: 110px 0;
 }
 </style>
