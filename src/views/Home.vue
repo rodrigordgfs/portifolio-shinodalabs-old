@@ -2,7 +2,7 @@
   <div class="home">
     <div class="wrapper">
       <div class="bg-video">
-        <video autoplay loop muted src="../../public/assets/bgvideo.mp4" />
+        <video autoplay loop muted src="https://i.imgur.com/t8401Oe.mp4" />
       </div>
       <div class="content">
         <header-menu />
