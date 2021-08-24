@@ -6,11 +6,12 @@
       aria-haspop="true"
       aria-controls="menu"
       aria-expanded="false"
+      @click="toogleMenu"
     >
       Menu
       <span id="hamburguer"></span>
     </button>
-    <ul id="menu__items" role="menu">
+    <ul id="menu__items" role="menu" @click="toogleItemMenu">
       <li v-for="item in menuItems" :key="item.link">
         <a :href="item.link">{{ item.name }}</a>
       </li>
@@ -44,6 +45,25 @@ export default {
       ],
     };
   },
+
+  methods: {
+    toogleMenu(event) {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("active");
+      const active = menu.classList.contains("active");
+      event.currentTarget.setAttribute("aria-expanded", active);
+      if (active) {
+        event.currentTarget.setAttribute("aria-label", "Fechar menu");
+      } else {
+        event.currentTarget.setAttribute("aria-label", "Abrir menu");
+      }
+    },
+
+    toogleItemMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("active");
+    },
+  },
 };
 </script>
 
@@ -66,7 +86,8 @@ $montserrat: "Montserrat", sans-serif;
         font-family: $montserrat;
         transition: 0.2s cubic-bezier(0.06, 0.29, 0.19, 1.4);
         &:hover {
-          color: $red;
+          color: $black;
+          background-color: $red;
         }
       }
     }
