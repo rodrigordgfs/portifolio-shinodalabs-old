@@ -76,7 +76,7 @@ $montserrat: "Montserrat", sans-serif;
 #menu {
   #menu__items {
     display: flex;
-    gap: 20px;
+    gap: 5px;
     list-style: none;
     li {
       a {
@@ -84,7 +84,8 @@ $montserrat: "Montserrat", sans-serif;
         font-size: 18px;
         color: $white;
         font-family: $montserrat;
-        transition: 0.2s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+        transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+        padding: 5px 15px;
         &:hover {
           color: $black;
           background-color: $red;
@@ -142,7 +143,7 @@ $montserrat: "Montserrat", sans-serif;
       right: 0;
       background: $black;
       z-index: 1000;
-      transition: 0.2s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+      transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
       visibility: hidden;
       overflow-y: hidden;
       li {

@@ -86,7 +86,7 @@ $montserrat: "Montserrat", sans-serif;
       padding: 10px;
       border: 1px solid $white;
       border-radius: 50%;
-      transition: 0.2s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+      transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
       .icon-image {
         width: 30px;
         height: 30px;

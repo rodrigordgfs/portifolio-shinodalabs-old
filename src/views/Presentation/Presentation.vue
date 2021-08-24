@@ -63,7 +63,7 @@ $montserrat: "Montserrat", sans-serif;
     text-transform: uppercase;
     padding: 15px 20px;
     margin-top: 40px;
-    transition: 0.2s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+    transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
     &:hover {
       background-color: $red;
     }

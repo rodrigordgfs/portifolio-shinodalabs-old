@@ -54,7 +54,7 @@ $montserrat: "Montserrat", sans-serif;
   img {
     max-width: 100%;
     display: block;
-    transition: 0.2s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+    transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
   }
   &:hover > img {
     transform: scale(1.3);
@@ -65,7 +65,7 @@ $montserrat: "Montserrat", sans-serif;
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: 0.2s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+    transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
     background-color: rgba(200, 45, 23, 0.8);
     .project__item_overlay_content {
       position: absolute;
@@ -91,7 +91,7 @@ $montserrat: "Montserrat", sans-serif;
         background-color: $black;
         text-transform: uppercase;
         padding: 10px 50px;
-        transition: 0.2s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+        transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
         &:hover {
           color: $black;
           background-color: $white;
