@@ -17,7 +17,7 @@ import Projects from "./Projects/Projects";
 import About from "./About/About";
 import Skills from "./Skills/Skills";
 import FooterApp from "./Footer/Footer";
-import BackToTop from "@/components/BackToTop"
+import BackToTop from "@/components/BackToTop";
 
 export default {
   name: "home",

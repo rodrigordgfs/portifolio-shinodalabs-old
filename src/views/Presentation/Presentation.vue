@@ -76,7 +76,7 @@ $montserrat: "Montserrat", sans-serif;
 
 /* Smartphone */
 @media only screen and (max-width: 787px) {
-#presentation {
+  #presentation {
     h1 {
       font-size: 2rem;
     }
