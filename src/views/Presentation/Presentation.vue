@@ -1,6 +1,6 @@
 <template>
   <section id="presentation">
-    <h2>Olá, eu sou o Rodrigo Shinoda 👋</h2>
+    <h2>Olá, eu sou o Rodrigo "Shinoda" 👋</h2>
     <h1>
       Desenvolvimento de<br />sites responsivos e<br />experiência de usuários
     </h1>
