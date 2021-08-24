@@ -111,10 +111,9 @@ $montserrat: "Montserrat", sans-serif;
         padding: 15px 0 5px 0;
       }
       &:nth-child(2) {
-        padding-bottom: 15px; 
+        padding-bottom: 15px;
       }
     }
-
   }
 }
 </style>
