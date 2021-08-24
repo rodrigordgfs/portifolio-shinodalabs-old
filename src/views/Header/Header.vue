@@ -1,7 +1,7 @@
 <template>
   <div id="wrapper">
     <header id="header">
-      <a href="#" id="header__brand">ShinodaLabs</a>
+      <a href="https://shinodalabs.com.br" id="header__brand">ShinodaLabs</a>
       <menu-app></menu-app>
     </header>
   </div>

@@ -32,59 +32,59 @@ export default {
           title: "LoopStudios",
           description:
             "Esta é uma solução para o desafio de uma landing page do Loopstudios no Frontend Mentor.",
-          link: "http://projects.shinodalabs.com.br/loopstudios/",
+          link: "https://projects.shinodalabs.com.br/loopstudios/",
         },
         {
           image: "https://i.imgur.com/xMS1olt.png",
           title: "Tela de Login",
           description: "Desafio 4 do canal do Discord Codelândia.",
-          link: "http://projects.shinodalabs.com.br/login/",
+          link: "https://projects.shinodalabs.com.br/login/",
         },
         {
           image: "https://i.imgur.com/h5WU4Gf.png",
           title: "Jordan Shoes",
           description: "Desafio 2 do canal do Discord Codelândia.",
-          link: "http://projects.shinodalabs.com.br/jordan-shoes/",
+          link: "https://projects.shinodalabs.com.br/jordan-shoes/",
         },
         {
           image: "https://i.imgur.com/C4mwWNo.png",
           title: "Fiber",
           description:
             "Desafio de criação de Landing Page do site https://codewell.cc.",
-          link: "http://projects.shinodalabs.com.br/fiber/",
+          link: "https://projects.shinodalabs.com.br/fiber/",
         },
         {
           image: "https://i.imgur.com/Xn0i75i.png",
           title: "Codelândia",
           description: "Desafio 1 do canal do Discord Codelândia.",
-          link: "http://projects.shinodalabs.com.br/codelandia/",
+          link: "https://projects.shinodalabs.com.br/codelandia/",
         },
         {
           image: "https://i.imgur.com/XC8v1DL.png",
           title: "Amplify",
           description:
             "Este site foi criado com HTML5, CSS3 e JS colocando em prática a experiência adquirida no curso completo de webdesign da Origamid.",
-          link: "http://projects.shinodalabs.com.br/amplify/",
+          link: "https://projects.shinodalabs.com.br/amplify/",
         },
         {
           image: "https://i.imgur.com/RcIyp3c.png",
           title: "The Rosa",
           description:
             "Este site foi criado com HTML5, CSS3 e JS colocando em prática a experiência adquirida no curso completo de webdesign da Origamid.",
-          link: "http://projects.shinodalabs.com.br/rosa/",
+          link: "https://projects.shinodalabs.com.br/rosa/",
         },
         {
           image: "https://i.imgur.com/6pokOqC.png",
           title: "Arez",
           description:
             "Este site foi criado com HTML5, CSS3 e JS colocando em prática a experiência adquirida no curso completo de webdesign da Origamid.",
-          link: "http://projects.shinodalabs.com.br/arez/",
+          link: "https://projects.shinodalabs.com.br/arez/",
         },
         {
           image: "https://i.imgur.com/f5xHoaT.png",
           title: "One Page",
           description: "Desafio 3 do canal do Discord Codelândia.",
-          link: "http://projects.shinodalabs.com.br/one-page/",
+          link: "https://projects.shinodalabs.com.br/one-page/",
         },
       ],
     };

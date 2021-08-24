@@ -1,11 +1,13 @@
 <template>
   <div class="project__item">
-    <img :src="image" :alt="title" loading="lazy" />
+    <img :src="image" :alt="title" :title="title" loading="lazy" />
     <div class="project__item_overlay">
       <div class="project__item_overlay_content">
         <h2>{{ title }}</h2>
         <p>{{ description }}</p>
-        <a :href="link" target="__blank" title="Acessar este projeto">Acessar</a>
+        <a :href="link" target="__blank" title="Acessar este projeto"
+          >Acessar</a
+        >
       </div>
     </div>
   </div>
