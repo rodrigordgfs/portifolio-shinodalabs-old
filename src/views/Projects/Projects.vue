@@ -1,6 +1,6 @@
 <template>
   <section id="projects">
-    <h1 class="title">Projetos</h1>
+    <h2 class="title">Projetos</h2>
     <div id="projects__grid">
       <project-item
         v-for="project in projects"

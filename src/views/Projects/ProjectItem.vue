@@ -5,7 +5,7 @@
       <div class="project__item_overlay_content">
         <h2>{{ title }}</h2>
         <p>{{ description }}</p>
-        <a :href="link" target="__blank">Acessar</a>
+        <a :href="link" target="__blank" title="Acessar este projeto">Acessar</a>
       </div>
     </div>
   </div>

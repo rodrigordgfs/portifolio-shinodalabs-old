@@ -1,6 +1,6 @@
 <template>
   <section id="skills">
-    <h1 class="title">Habilidades</h1>
+    <h2 class="title">Habilidades</h2>
     <split-carousel
       :display-amount="8"
       timing-function="cubic-bezier(0.06, 0.29, 0.19, 1.4)"
