@@ -134,4 +134,18 @@ $montserrat: "Montserrat", sans-serif;
     margin-top: 30px;
   }
 }
+
+/* Tablets */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+}
+
+/* Smartphone */
+@media only screen and (max-width: 787px) {
+  #projects {
+    #projects__grid {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
 </style>

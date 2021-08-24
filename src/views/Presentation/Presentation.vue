@@ -8,7 +8,11 @@
       Desenvolvedor Front-End e estudante do curso de Análise e Desenvolvimento
       de Sistemas. Sou apaixonado pelo desenvolvimento Web e UI/UX.
     </p>
-    <button>Conecte-se comigo</button>
+    <a
+      href="https://www.linkedin.com/in/rodrigo-viegas-rodrigues-83315164/"
+      target="__blank"
+      >Conecte-se comigo</a
+    >
   </section>
 </template>
 
@@ -53,17 +57,28 @@ $montserrat: "Montserrat", sans-serif;
     text-align: center;
     max-width: 600px;
   }
-  button {
+  a {
     background-color: $white;
     color: $black;
-    border: none;
     text-transform: uppercase;
     padding: 15px 20px;
     margin-top: 40px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+    transition: 0.2s cubic-bezier(0.06, 0.29, 0.19, 1.4);
     &:hover {
       background-color: $red;
+    }
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+}
+
+/* Smartphone */
+@media only screen and (max-width: 787px) {
+#presentation {
+    h1 {
+      font-size: 2rem;
     }
   }
 }

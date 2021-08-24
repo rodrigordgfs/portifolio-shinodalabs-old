@@ -64,7 +64,7 @@ $montserrat: "Montserrat", sans-serif;
         font-size: 18px;
         color: $white;
         font-family: $montserrat;
-        transition: 0.2s ease-in-out;
+        transition: 0.2s cubic-bezier(0.06, 0.29, 0.19, 1.4);
         &:hover {
           color: $red;
         }
@@ -79,7 +79,7 @@ $montserrat: "Montserrat", sans-serif;
 @media only screen and (max-width: 768px) {
   #menu {
     button {
-      color: #000000;
+      color: $white;
       font-weight: bold;
       font-family: $montserrat;
       text-transform: uppercase;
@@ -95,10 +95,10 @@ $montserrat: "Montserrat", sans-serif;
           content: "";
           width: 20px;
           height: 2px;
-          background: #000000;
+          background: $white;
           display: block;
           margin-top: 5px;
-          transition: 0.3s;
+          transition: 0.3s cubic-bezier(0.06, 0.29, 0.19, 1.4);
           position: relative;
         }
       }
@@ -121,7 +121,7 @@ $montserrat: "Montserrat", sans-serif;
       right: 0;
       background: $black;
       z-index: 1000;
-      transition: 0.6s;
+      transition: 0.2s cubic-bezier(0.06, 0.29, 0.19, 1.4);
       visibility: hidden;
       overflow-y: hidden;
       li {

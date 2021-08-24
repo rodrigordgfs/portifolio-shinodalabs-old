@@ -24,7 +24,7 @@
         </p>
       </div>
       <div id="about__img">
-        <img src="https://i.imgur.com/7LLsGvi.jpg" alt="Me" />
+        <img src="https://via.placeholder.com/334x501" alt="Me" />
       </div>
     </section>
   </div>
@@ -53,6 +53,7 @@ $montserrat: "Montserrat", sans-serif;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     font-family: $montserrat;
     #about__content {
       flex: 1;
@@ -76,6 +77,20 @@ $montserrat: "Montserrat", sans-serif;
       img {
         box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.4);
       }
+    }
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+}
+
+/* Smartphone */
+@media only screen and (max-width: 787px) {
+  #background {
+    #about {
+      flex-direction: column;
+      gap: 30px;
     }
   }
 }

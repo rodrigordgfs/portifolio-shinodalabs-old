@@ -1,6 +1,6 @@
 <template>
   <div class="project__item">
-    <img :src="image" :alt="title" />
+    <img :src="image" :alt="title" loading="lazy" />
     <div class="project__item_overlay">
       <div class="project__item_overlay_content">
         <h2>{{ title }}</h2>
@@ -65,7 +65,7 @@ $montserrat: "Montserrat", sans-serif;
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: 0.2s ease-in-out;
+    transition: 0.2s cubic-bezier(0.06, 0.29, 0.19, 1.4);
     background-color: rgba(200, 45, 23, 0.8);
     .project__item_overlay_content {
       position: absolute;
@@ -91,7 +91,7 @@ $montserrat: "Montserrat", sans-serif;
         background-color: $black;
         text-transform: uppercase;
         padding: 10px 50px;
-        transition: 0.4s ease-in-out;
+        transition: 0.2s cubic-bezier(0.06, 0.29, 0.19, 1.4);
         &:hover {
           color: $black;
           background-color: $white;
@@ -101,6 +101,20 @@ $montserrat: "Montserrat", sans-serif;
     &:hover {
       opacity: 1;
     }
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .project__item {
+    flex: 1 1 49%;
+  }
+}
+
+/* Smartphone */
+@media only screen and (max-width: 787px) {
+  .project__item {
+    flex: 1 1 100%;
   }
 }
 </style>

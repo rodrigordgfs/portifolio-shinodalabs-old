@@ -1,34 +1,19 @@
 <template>
   <footer id="footer">
     <div id="social-networks">
-      <div class="icon">
-        <img
-          src="../../assets/icons/linkedin.svg"
-          alt="Linkedin"
-          class="icon-image"
-        />
-      </div>
-      <div class="icon">
-        <img
-          src="../../assets/icons/github.svg"
-          alt="Github"
-          class="icon-image"
-        />
-      </div>
-      <div class="icon">
-        <img
-          src="../../assets/icons/instagram.svg"
-          alt="Instagram"
-          class="icon-image"
-        />
-      </div>
-      <div class="icon">
-        <img
-          src="../../assets/icons/facebook.svg"
-          alt="Facebook"
-          class="icon-image"
-        />
-      </div>
+      <a
+        v-for="item in socialNetworks"
+        :key="item.name"
+        :href="item.link"
+        target="__blank"
+        :title="item.name"
+        class="icon"
+      >
+        <img :src="item.icon" :alt="item.name" class="icon-image" />
+      </a>
+    </div>
+    <div id="copiryght">
+      <p>{{ currentYear }} &copy; ShinodaLabs - Desenvolvedor Front-end</p>
     </div>
   </footer>
 </template>
@@ -36,6 +21,39 @@
 <script>
 export default {
   name: "Footer",
+
+  data() {
+    return {
+      socialNetworks: [
+        {
+          name: "Linkedin",
+          icon: "../../assets/icons/linkedin.svg",
+          link: "https://www.linkedin.com/in/rodrigo-viegas-rodrigues-83315164/",
+        },
+        {
+          name: "Github",
+          icon: "../../assets/icons/github.svg",
+          link: "https://github.com/rodrigordgfs",
+        },
+        {
+          name: "Instagram",
+          icon: "../../assets/icons/instagram.svg",
+          link: "https://www.instagram.com/mr_shinodaa/",
+        },
+        {
+          name: "Facebook",
+          icon: "../../assets/icons/facebook.svg",
+          link: "https://www.facebook.com/MrShiinoda",
+        },
+      ],
+    };
+  },
+
+  computed: {
+    currentYear() {
+      return new Date().getFullYear();
+    },
+  },
 };
 </script>
 
@@ -51,7 +69,6 @@ $montserrat: "Montserrat", sans-serif;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 10px;
   margin-top: 20px;
   background-color: $black;
   #social-networks {
@@ -60,6 +77,7 @@ $montserrat: "Montserrat", sans-serif;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-top: 50px;
     .icon {
       display: flex;
       justify-content: center;
@@ -75,6 +93,17 @@ $montserrat: "Montserrat", sans-serif;
       &:hover {
         border: 1px solid $red;
       }
+    }
+  }
+  #copiryght {
+    p {
+      font-family: $montserrat;
+      color: $white;
+      background-color: $red;
+      padding: 15px 0;
+      margin-top: 50px;
+      text-align: center;
+      width: 100vw;
     }
   }
 }

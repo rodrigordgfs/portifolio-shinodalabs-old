@@ -42,6 +42,7 @@ $montserrat: "Montserrat", sans-serif;
       font-weight: 700;
       color: $white;
       letter-spacing: 1px;
+      transition: 0.2s cubic-bezier(0.06, 0.29, 0.19, 1.4);
       &:hover {
         color: $red;
       }
