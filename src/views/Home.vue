@@ -62,6 +62,8 @@ $black: #111111;
 }
 .wrapper > .bg-video > video {
   height: 100vh;
+  width: 100vw;
+  object-fit: cover;
   filter: opacity(0.3);
 }
 </style>
