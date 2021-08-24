@@ -38,6 +38,7 @@ $montserrat: "Montserrat", sans-serif;
   font-family: $montserrat;
   height: calc(100vh - 40px);
   background-color: $black;
+  margin-top: -1px;
   h2 {
     color: $white;
     font-size: 1.125rem;
@@ -66,6 +67,7 @@ $montserrat: "Montserrat", sans-serif;
     transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
     &:hover {
       background-color: $red;
+      color: $white;
     }
   }
 }

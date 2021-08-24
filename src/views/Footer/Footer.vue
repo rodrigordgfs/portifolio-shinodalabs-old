@@ -79,6 +79,7 @@ $montserrat: "Montserrat", sans-serif;
     align-items: center;
     gap: 20px;
     padding-top: 50px;
+    margin-bottom: 50px;
     .icon {
       display: flex;
       justify-content: center;
@@ -97,16 +98,16 @@ $montserrat: "Montserrat", sans-serif;
     }
   }
   #copiryght {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $red;
+    width: 100%;
     p {
       font-family: $montserrat;
       color: $white;
-      background-color: $red;
-      /* padding: 15px 0; */
-      /* margin-top: 50px; */
-      text-align: center;
-      width: 100vw;
       &:first-child {
-        margin-top: 50px;
         padding: 15px 0 5px 0;
       }
       &:nth-child(2) {

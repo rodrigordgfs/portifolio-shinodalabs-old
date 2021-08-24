@@ -115,6 +115,20 @@ $montserrat: "Montserrat", sans-serif;
 @media only screen and (max-width: 787px) {
   .project__item {
     flex: 1 1 100%;
+    .project__item_overlay {
+      .project__item_overlay_content {
+        h2 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+          padding: 5px 0;
+        }
+        a {
+          padding: 10px 30px;
+        }
+      }
+    }
   }
 }
 </style>

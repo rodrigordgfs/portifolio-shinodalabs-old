@@ -38,10 +38,6 @@ export default {
           name: "Habilidade",
           link: "#skills",
         },
-        {
-          name: "Contato",
-          link: "#contacts",
-        },
       ],
     };
   },
