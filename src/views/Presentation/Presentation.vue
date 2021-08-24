@@ -37,7 +37,7 @@ $montserrat: "Montserrat", sans-serif;
   flex-wrap: nowrap;
   font-family: $montserrat;
   height: calc(100vh - 40px);
-  background-color: $black;
+  /* background-color: $black; */
   margin-top: -1px;
   h2 {
     color: $white;

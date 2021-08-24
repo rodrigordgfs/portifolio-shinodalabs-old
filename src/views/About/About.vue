@@ -2,7 +2,7 @@
   <div id="background">
     <section id="about">
       <div id="about__content">
-        <h2>Sobre min</h2>
+        <h2>Sobre mim</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever

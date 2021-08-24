@@ -1,5 +1,5 @@
 <template>
-  <div id="background">
+  <div id="wrapper">
     <header id="header">
       <a href="#" id="header__brand">ShinodaLabs</a>
       <menu-app></menu-app>
@@ -24,8 +24,7 @@ $black: #111111;
 $gray: #808080;
 $red: #c82d35;
 $montserrat: "Montserrat", sans-serif;
-#background {
-  background-color: #111111;
+#wrapper {
   #header {
     width: 80vw;
     margin: 0 auto;

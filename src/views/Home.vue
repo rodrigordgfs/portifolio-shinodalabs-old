@@ -1,7 +1,14 @@
 <template>
   <div class="home">
-    <header-menu />
-    <presentation />
+    <div class="wrapper">
+      <div class="bg-video">
+        <video autoplay loop muted src="../../public/assets/bgvideo.mp4" />
+      </div>
+      <div class="content">
+        <header-menu />
+        <presentation />
+      </div>
+    </div>
     <projects />
     <about />
     <skills />
@@ -34,4 +41,27 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+$black: #111111;
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.wrapper > .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: $black;
+}
+.wrapper > .bg-video > video {
+  height: 100vh;
+  filter: opacity(0.3);
+}
+</style>
