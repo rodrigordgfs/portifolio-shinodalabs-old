@@ -14,6 +14,7 @@
     </div>
     <div id="copiryght">
       <p>{{ currentYear }} &copy; ShinodaLabs - Desenvolvedor Front-end</p>
+      <p>Feito com ❤ por Rodrigo Shinoda</p>
     </div>
   </footer>
 </template>
@@ -100,11 +101,19 @@ $montserrat: "Montserrat", sans-serif;
       font-family: $montserrat;
       color: $white;
       background-color: $red;
-      padding: 15px 0;
-      margin-top: 50px;
+      /* padding: 15px 0; */
+      /* margin-top: 50px; */
       text-align: center;
       width: 100vw;
+      &:first-child {
+        margin-top: 50px;
+        padding: 15px 0 5px 0;
+      }
+      &:nth-child(2) {
+        padding-bottom: 15px; 
+      }
     }
+
   }
 }
 </style>
