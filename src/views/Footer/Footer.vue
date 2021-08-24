@@ -1,16 +1,13 @@
 <template>
   <footer id="footer">
     <div id="social-networks">
-      <a
+      <social-network-item
         v-for="item in socialNetworks"
         :key="item.name"
-        :href="item.link"
-        target="__blank"
-        :title="item.name"
-        class="icon"
-      >
-        <img :src="item.icon" :alt="item.name" class="icon-image" />
-      </a>
+        :name="item.name"
+        :link="item.link"
+        :icon="item.icon"
+      />
     </div>
     <div id="copiryght">
       <p>{{ currentYear }} &copy; ShinodaLabs - Desenvolvedor Front-end</p>
@@ -20,8 +17,14 @@
 </template>
 
 <script>
+import SocialNetworkItem from "./SocialNetworkItem.vue";
+
 export default {
   name: "Footer",
+
+  components: {
+    SocialNetworkItem,
+  },
 
   data() {
     return {
@@ -80,22 +83,6 @@ $montserrat: "Montserrat", sans-serif;
     gap: 20px;
     padding-top: 50px;
     margin-bottom: 50px;
-    .icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-      border: 1px solid $white;
-      border-radius: 50%;
-      transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
-      .icon-image {
-        width: 30px;
-        height: 30px;
-      }
-      &:hover {
-        border: 1px solid $red;
-      }
-    }
   }
   #copiryght {
     display: flex;
