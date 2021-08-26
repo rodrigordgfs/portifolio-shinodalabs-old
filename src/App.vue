@@ -7,7 +7,7 @@
 
 <script>
 // import BackgroundEffects from "@/components/BackgroundEffects.vue";
-import Home from "./views/Home.vue";
+import Home from "./views/Home/Home.vue";
 export default {
   name: "App",
   components: {
