@@ -4,35 +4,37 @@
       <div id="about__content">
         <h2>Sobre mim</h2>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged.
+          Seja bem-vindo ap meu portifólio, com projetos desenvolvidos com HTML,
+          CSS, SASS e JavaScript.
           <br /><br />
-          It was popularised in the 1960s with the release of Letraset sheets
-          containing Lorem Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem
-          Ipsum.
-          <br /><br />
-          It was popularised in the 1960s with the release of Letraset sheets
-          containing Lorem Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem
-          Ipsum. Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry.
+          Meu nome é Rodrigo, mais conhecido como "Shinoda" (sim é apelido e não
+          sobrenome 😆), tenho {{ currentAge }} anos e sou nascido em Camaquã -
+          Rio Grande do Sul.<br />Sou estudante de Analise e desenvolvimento de
+          sistemas no IFSUL Camaquã. Atualmente trabalho na empresa Lojas
+          Pompéia como Desenvolvedor Junior. <br /><br />
+          Iniciei na empresa como Auxiliar de Suporte Técnico N1 e atualmente
+          como dito antes trabalho como Desenvolvedor Junior atuando em
+          aplicações VueJS.
         </p>
       </div>
       <div id="about__img">
-        <img src="https://via.placeholder.com/334x501" alt="Me" />
+        <img src="https://i.imgur.com/vhql9ym.png" alt="Rodrigo Shinoda" />
       </div>
     </section>
   </div>
 </template>
 
 <script>
+import moment from "moment";
+
 export default {
   name: "About",
+
+  computed: {
+    currentAge() {
+      return moment().diff("1997-11-28", "years");
+    },
+  },
 };
 </script>
 
