@@ -1,6 +1,7 @@
 <template>
   <section id="presentation">
     <h2>Olá, eu sou o Rodrigo "Shinoda" 👋</h2>
+    <h2>{{ maintenance }}</h2>
     <h1>
       Desenvolvimento de<br />sites responsivos e<br />experiência de usuários
     </h1>
@@ -19,6 +20,12 @@
 <script>
 export default {
   name: "Presentation",
+
+  computed: {
+    maintenance() {
+      return process.env.VUE_APP_MAINTENANCE;
+    },
+  },
 };
 </script>
 
@@ -37,7 +44,6 @@ $montserrat: "Montserrat", sans-serif;
   flex-wrap: nowrap;
   font-family: $montserrat;
   height: calc(100vh - 40px);
-  /* background-color: $black; */
   margin-top: -1px;
   h2 {
     color: $white;
