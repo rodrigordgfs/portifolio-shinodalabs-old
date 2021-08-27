@@ -17,7 +17,7 @@
       <div id="image">
         <img src="assets/images/maintenance.svg" alt="Manutenção" />
       </div>
-      <p> Env: {{ maintenance }}</p>
+      <p>Env: {{ maintenance }}</p>
     </div>
   </div>
 </template>
@@ -160,6 +160,26 @@ $montserrat: "Montserrat", sans-serif;
   }
   100% {
     background-position: 0% 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #wrapper {
+    #container {
+      #content {
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1rem;
+        }
+      }
+      #image {
+        img {
+          width: 300px;
+        }
+      }
+    }
   }
 }
 </style>
