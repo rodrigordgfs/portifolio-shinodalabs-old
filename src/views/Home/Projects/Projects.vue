@@ -132,7 +132,7 @@ $montserrat: "Montserrat", sans-serif;
   padding: 30px 15px;
 }
 
-.splide__pagination__page.is-active  {
+.splide__pagination__page.is-active {
   background: $red !important;
 }
 
