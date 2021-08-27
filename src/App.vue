@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <!-- <background-effects id="back-effect" /> -->
-    <home />
+    <maintenance />
+    <!-- <home /> -->
   </div>
 </template>
 
 <script>
-// import BackgroundEffects from "@/components/BackgroundEffects.vue";
-import Home from "./views/Home/Home.vue";
+// import Home from "./views/Home/Home";
+import Maintenance from "./views/Maintenance/Maintenance";
+
 export default {
   name: "App",
+
   components: {
-    // BackgroundEffects,
-    Home,
+    // Home,
+    Maintenance,
   },
 };
 </script>

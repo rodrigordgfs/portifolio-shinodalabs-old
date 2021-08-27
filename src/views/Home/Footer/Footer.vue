@@ -1,7 +1,7 @@
 <template>
   <footer id="footer">
     <div id="social-networks">
-      <social-network-item
+      <social-network
         v-for="item in socialNetworks"
         :key="item.name"
         :name="item.name"
@@ -17,13 +17,13 @@
 </template>
 
 <script>
-import SocialNetworkItem from "./SocialNetworkItem.vue";
+import SocialNetwork from "@/components/SocialNetwork";
 
 export default {
   name: "Footer",
 
   components: {
-    SocialNetworkItem,
+    SocialNetwork,
   },
 
   data() {
