@@ -17,7 +17,6 @@
       <div id="image">
         <img src="assets/images/maintenance.svg" alt="Manutenção" />
       </div>
-      <p>Env: {{ maintenance }}</p>
     </div>
   </div>
 </template>
@@ -30,7 +29,6 @@ export default {
 
   data() {
     return {
-      maintenance: process.env.VUE_APP_MAINTENANCE,
       socialNetworks: [
         {
           name: "Linkedin",

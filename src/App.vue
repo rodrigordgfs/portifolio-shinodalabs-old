@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <maintenance />
-    <!-- <home /> -->
+    <!-- <maintenance /> -->
+    <home />
   </div>
 </template>
 
 <script>
-// import Home from "./views/Home/Home";
-import Maintenance from "./views/Maintenance/Maintenance";
+import Home from "./views/Home/Home";
+// import Maintenance from "./views/Maintenance/Maintenance";
 
 export default {
   name: "App",
 
   components: {
-    // Home,
-    Maintenance,
+    Home,
+    // Maintenance,
   },
 };
 </script>
