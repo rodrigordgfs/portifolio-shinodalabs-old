@@ -53,6 +53,7 @@ export default {
       ],
     };
   },
+  
 
   components: {
     SocialNetwork,
