@@ -1,21 +1,12 @@
 <template>
   <div id="app">
-    <!-- <maintenance /> -->
-    <home />
+    <router-view />
   </div>
 </template>
 
 <script>
-import Home from "./views/Home/Home";
-// import Maintenance from "./views/Maintenance/Maintenance";
-
 export default {
   name: "App",
-
-  components: {
-    Home,
-    // Maintenance,
-  },
 };
 </script>
 

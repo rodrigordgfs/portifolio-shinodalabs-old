@@ -94,6 +94,7 @@ $montserrat: "Montserrat", sans-serif;
     p {
       font-family: $montserrat;
       color: $white;
+      text-align: center;
       &:first-child {
         padding: 15px 0 5px 0;
       }
