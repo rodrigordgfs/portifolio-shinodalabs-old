@@ -1,5 +1,5 @@
 <template>
-  <div id="wrapper">
+  <div id="container-wrapper">
     <div id="container">
       <div id="content">
         <h1>Site em manutenção</h1>
@@ -66,10 +66,10 @@ $black: #111111;
 $gray: #808080;
 $red: #c82d35;
 $montserrat: "Montserrat", sans-serif;
-#wrapper {
+#container-wrapper {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(304deg, #111111, #242424, #111111);
+  background: linear-gradient(304deg, #000000, #242424, #111111);
   background-size: 600% 600%;
   -webkit-animation: AnimationGradient 28s ease infinite;
   -moz-animation: AnimationGradient 28s ease infinite;

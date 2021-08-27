@@ -94,6 +94,7 @@ export default {
 
       splideOptions: {
         type: "loop",
+        rewind: true,
         padding: {
           right: "5rem",
           left: "5rem",
@@ -166,6 +167,10 @@ $montserrat: "Montserrat", sans-serif;
       flex-direction: column;
       gap: 20px;
     }
+  }
+
+  .padding-slide {
+    padding: 30px 5px;
   }
 }
 </style>
