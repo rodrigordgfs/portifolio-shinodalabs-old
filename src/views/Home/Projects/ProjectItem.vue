@@ -46,7 +46,6 @@ $red: #c82d35;
 $montserrat: "Montserrat", sans-serif;
 
 .project__item {
-  flex: 1 1 32%;
   position: relative;
   display: flex;
   justify-content: center;

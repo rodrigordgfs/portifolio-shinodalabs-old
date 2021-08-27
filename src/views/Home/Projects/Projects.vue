@@ -1,16 +1,20 @@
 <template>
   <section id="projects">
     <h2 class="title">Projetos</h2>
-    <div id="projects__grid">
-      <project-item
+    <splide :options="splideOptions">
+      <splide-slide
         v-for="project in projects"
         :key="project.title"
-        :image="project.image"
-        :title="project.title"
-        :description="project.description"
-        :link="project.link"
-      />
-    </div>
+        class="padding-slide"
+      >
+        <project-item
+          :image="project.image"
+          :title="project.title"
+          :description="project.description"
+          :link="project.link"
+        />
+      </splide-slide>
+    </splide>
   </section>
 </template>
 
@@ -87,6 +91,14 @@ export default {
           link: "https://projects.shinodalabs.com.br/one-page/",
         },
       ],
+
+      splideOptions: {
+        type: "loop",
+        padding: {
+          right: "5rem",
+          left: "5rem",
+        },
+      },
     };
   },
 };
@@ -114,6 +126,14 @@ $montserrat: "Montserrat", sans-serif;
     background-color: $red;
     margin: 0 auto;
   }
+}
+
+.padding-slide {
+  padding: 30px 15px;
+}
+
+.splide__pagination__page.is-active {
+  background: $red !important;
 }
 
 #projects {
