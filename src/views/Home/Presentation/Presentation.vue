@@ -1,15 +1,15 @@
 <template>
   <section id="presentation">
-    <h2>Olá, eu sou o Rodrigo "Shinoda" 👋</h2>
-    <h2>{{ maintenance }}</h2>
-    <h1>
+    <h2 v-scrollanimation>Olá, eu sou o Rodrigo "Shinoda" 👋</h2>
+    <h1 v-scrollanimation>
       Desenvolvimento de<br />sites responsivos e<br />experiência de usuários
     </h1>
-    <p>
+    <p v-scrollanimation>
       Desenvolvedor Front-End e estudante do curso de Análise e Desenvolvimento
       de Sistemas. Sou apaixonado pelo desenvolvimento Web e UI/UX.
     </p>
     <a
+      v-scrollanimation
       href="https://www.linkedin.com/in/rodrigo-viegas-rodrigues-83315164/"
       target="__blank"
       >Conecte-se comigo</a
@@ -20,12 +20,6 @@
 <script>
 export default {
   name: "Presentation",
-
-  computed: {
-    maintenance() {
-      return process.env.VUE_APP_MAINTENANCE;
-    },
-  },
 };
 </script>
 
@@ -76,6 +70,17 @@ $montserrat: "Montserrat", sans-serif;
       color: $white;
     }
   }
+}
+
+.before-enter {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 1s cubic-bezier(0.41, 0.01, 0.57, 1.61);
+}
+
+.enter {
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 /* Tablets */

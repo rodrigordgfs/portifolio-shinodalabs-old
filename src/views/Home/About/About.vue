@@ -17,7 +17,7 @@
           aplicações VueJS.
         </p>
       </div>
-      <div id="about__img">
+      <div id="about__img" v-scrollanimation>
         <img src="https://i.imgur.com/vhql9ym.png" alt="Rodrigo Shinoda" />
       </div>
     </section>
@@ -40,7 +40,7 @@ export default {
 
 <style lang="scss">
 $white: #ffffff;
-$black: #111111;
+$black: #302929;
 $gray: #cccccc;
 $red: #c82d35;
 $montserrat: "Montserrat", sans-serif;
@@ -81,6 +81,17 @@ $montserrat: "Montserrat", sans-serif;
       }
     }
   }
+}
+
+.before-enter {
+  opacity: 0;
+  transform: scale(0.5) rotateZ(-25deg);
+  transition: all 1s cubic-bezier(0.41, 0.01, 0.57, 1.61);
+}
+
+.enter {
+  opacity: 1;
+  transform: scale(1) rotateZ(0deg);
 }
 
 /* Tablets */
