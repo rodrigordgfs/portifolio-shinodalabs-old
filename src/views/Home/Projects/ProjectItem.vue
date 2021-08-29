@@ -1,6 +1,16 @@
 <template>
   <div class="project__item">
-    <img :src="image" :alt="title" :title="title" loading="lazy" />
+    <div
+      class="project__item_image"
+      :style="{
+        backgroundImage: 'url(' + image + ')',
+        backgroundSize: 'cover',
+        width: '100%',
+        height: '100%',
+        display: 'block',
+        transition: 'transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4)',
+      }"
+    ></div>
     <div class="project__item_overlay">
       <div class="project__item_overlay_content">
         <h2>{{ title }}</h2>
@@ -52,11 +62,8 @@ $montserrat: "Montserrat", sans-serif;
   align-items: center;
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.4);
   overflow: hidden;
-  img {
-    max-width: 100%;
-    display: block;
-    transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
-  }
+  width: 100%;
+  height: 100%;
   &:hover > img {
     transform: scale(1.3);
   }
@@ -85,7 +92,7 @@ $montserrat: "Montserrat", sans-serif;
       p {
         color: $white;
         text-align: center;
-        padding: 10px 0;
+        margin: 10px 50px;
       }
       a {
         color: $white;

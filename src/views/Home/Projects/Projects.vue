@@ -1,20 +1,16 @@
 <template>
   <section id="projects">
     <h2 class="title">Projetos</h2>
-    <splide :options="splideOptions">
-      <splide-slide
-        v-for="project in projects"
-        :key="project.title"
-        class="padding-slide"
-      >
+    <slider animation="fade" stopOnHover="true">
+      <slider-item v-for="project in projects" :key="project.title">
         <project-item
           :image="project.image"
           :title="project.title"
           :description="project.description"
           :link="project.link"
         />
-      </splide-slide>
-    </splide>
+      </slider-item>
+    </slider>
   </section>
 </template>
 
@@ -129,11 +125,7 @@ $montserrat: "Montserrat", sans-serif;
   }
 }
 
-.padding-slide {
-  padding: 30px 15px;
-}
-
-.splide__pagination__page.is-active {
+.slider-indicator-active {
   background: $red !important;
 }
 
@@ -167,10 +159,6 @@ $montserrat: "Montserrat", sans-serif;
       flex-direction: column;
       gap: 20px;
     }
-  }
-
-  .padding-slide {
-    padding: 30px 5px;
   }
 }
 </style>
