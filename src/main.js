@@ -1,11 +1,10 @@
 import Vue from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
-import VueSplide from "@splidejs/vue-splide";
-import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import router from "./router";
+import EasySlider from "vue-easy-slider";
 
-Vue.use(VueSplide);
+Vue.use(EasySlider);
 
 Vue.config.productionTip = false;
 
