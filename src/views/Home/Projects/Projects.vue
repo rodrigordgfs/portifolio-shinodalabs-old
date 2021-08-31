@@ -28,6 +28,13 @@ export default {
     return {
       projects: [
         {
+          image: "https://i.imgur.com/GQ1a0xY.png",
+          title: "Digital Architects",
+          description:
+            "Site desenvolvido apartir de um layout encontrado no Figma. Este projeto foi desenvolvido com VueJS.",
+          link: "https://projects.shinodalabs.com.br/digital-architects/",
+        },
+        {
           image: "https://i.imgur.com/vUTopkP.png",
           title: "LoopStudios",
           description:
