@@ -2,8 +2,8 @@
   <div id="background">
     <section id="about">
       <div id="about__content">
-        <h2>Sobre mim</h2>
-        <p>
+        <h2 class="about__title">Sobre mim</h2>
+        <p class="about__description">
           Seja bem-vindo ao meu portfólio, com projetos desenvolvidos com HTML,
           CSS, SASS e JavaScript.
           <br /><br />
@@ -26,6 +26,7 @@
 
 <script>
 import moment from "moment";
+import ScrollReveal from "scrollreveal";
 
 export default {
   name: "About",
@@ -33,6 +34,35 @@ export default {
   computed: {
     currentAge() {
       return moment().diff("1997-11-28", "years");
+    },
+  },
+
+  mounted() {
+    this.scrollReveal();
+  },
+
+  methods: {
+    scrollReveal() {
+      ScrollReveal({
+        origin: "top",
+        distance: "50px",
+        duration: 2000,
+        reset: true,
+      }).reveal(".about__title", { delay: 200 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "50px",
+        duration: 2000,
+        reset: true,
+      }).reveal(".about__description", { delay: 250 });
+
+      ScrollReveal({
+        origin: "right",
+        distance: "50px",
+        duration: 2000,
+        reset: true,
+      }).reveal("#about__img", { delay: 300 });
     },
   },
 };
