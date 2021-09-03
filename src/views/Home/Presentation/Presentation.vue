@@ -1,14 +1,15 @@
 <template>
   <section id="presentation">
-    <h2>Olá, eu sou o Rodrigo "Shinoda" 👋</h2>
-    <h1>
+    <h2 class="presentation__name">Olá, eu sou o Rodrigo "Shinoda" 👋</h2>
+    <h1 class="presentation__text">
       Desenvolvimento de<br />sites responsivos e<br />experiência de usuários
     </h1>
-    <p>
+    <p class="presentation__description">
       Desenvolvedor Front-End e estudante do curso de Análise e Desenvolvimento
       de Sistemas. Sou apaixonado pelo desenvolvimento Web e UI/UX.
     </p>
     <a
+      class="presentation__action"
       href="https://www.linkedin.com/in/rodrigo-viegas-rodrigues-83315164/"
       target="__blank"
       >Conecte-se comigo</a
@@ -17,8 +18,29 @@
 </template>
 
 <script>
+import ScrollReveal from "scrollreveal";
+
 export default {
   name: "Presentation",
+
+  mounted() {
+    this.scrollReveal();
+  },
+
+  methods: {
+    scrollReveal() {
+      const sr = ScrollReveal({
+        origin: "top",
+        distance: "50px",
+        duration: 2000,
+        reset: true,
+      });
+      sr.reveal(".presentation__name", { delay: 200 });
+      sr.reveal(".presentation__text", { delay: 250 });
+      sr.reveal(".presentation__description", { delay: 300 });
+      sr.reveal(".presentation__action", { delay: 350 });
+    },
+  },
 };
 </script>
 

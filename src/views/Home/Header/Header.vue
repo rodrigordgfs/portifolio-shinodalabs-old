@@ -9,11 +9,29 @@
 
 <script>
 import MenuApp from "./Menu";
+import ScrollReveal from "scrollreveal";
 
 export default {
   name: "Header",
+
   components: {
     MenuApp,
+  },
+
+  mounted() {
+    this.scrollReveal();
+  },
+
+  methods: {
+    scrollReveal() {
+      const sr = ScrollReveal({
+        origin: "top",
+        distance: "50px",
+        duration: 2000,
+        reset: true,
+      });
+      sr.reveal("#header", { delay: 100 });
+    },
   },
 };
 </script>

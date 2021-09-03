@@ -10,14 +10,17 @@
       />
     </div>
     <div id="copiryght">
-      <p>{{ currentYear }} &copy; ShinodaLabs - Desenvolvedor Front-end</p>
-      <p>Feito com ❤ por Rodrigo Shinoda</p>
+      <p id="copiryght__text">
+        {{ currentYear }} &copy; ShinodaLabs - Desenvolvedor Front-end
+      </p>
+      <p id="copiryght__made">Feito com ❤ por Rodrigo Shinoda</p>
     </div>
   </footer>
 </template>
 
 <script>
 import SocialNetwork from "@/components/SocialNetwork";
+import ScrollReveal from "scrollreveal";
 
 export default {
   name: "Footer",
@@ -53,9 +56,27 @@ export default {
     };
   },
 
+  mounted() {
+    this.scrollReveal();
+  },
+
   computed: {
     currentYear() {
       return new Date().getFullYear();
+    },
+  },
+
+  methods: {
+    scrollReveal() {
+      const sr = ScrollReveal({
+        origin: "bottom",
+        distance: "50px",
+        duration: 2000,
+        reset: true,
+      });
+      sr.reveal("#social-networks", { delay: 200 });
+      sr.reveal("#copiryght__text", { delay: 250 });
+      sr.reveal("#copiryght__made", { delay: 300 });
     },
   },
 };

@@ -12,6 +12,7 @@
     "eslint-plugin-prettier": "^3.4.1",
     "moment": "^2.29.1",
     "register-service-worker": "^1.7.1",
+    "scrollreveal": "^4.0.9",
     "vue": "^2.6.11",
     "vue-easy-slider": "^5.3.4",
     "vue-router": "^3.2.0",

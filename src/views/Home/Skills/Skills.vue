@@ -1,9 +1,10 @@
 <template>
   <section id="skills">
-    <h2 class="title">Habilidades</h2>
+    <h2 class="title__skills">Habilidades</h2>
     <split-carousel
       :display-amount="8"
       timing-function="cubic-bezier(0.06, 0.29, 0.19, 1.4)"
+      class="carousel__skill"
     >
       <split-carousel-item v-for="item in SkillItems" :key="item.title">
         <skill-item :alt="item.title" :image="item.image" />
@@ -15,6 +16,7 @@
 <script>
 import { SplitCarousel, SplitCarouselItem } from "vue-split-carousel";
 import SkillItem from "./SkillItem.vue";
+import ScrollReveal from "scrollreveal";
 
 export default {
   name: "Skills",
@@ -116,6 +118,23 @@ export default {
       ],
     };
   },
+
+  mounted() {
+    this.scrollReveal();
+  },
+
+  methods: {
+    scrollReveal() {
+      const sr = ScrollReveal({
+        origin: "left",
+        distance: "50px",
+        duration: 2000,
+        reset: true,
+      });
+      sr.reveal(".title__skills", { delay: 200 });
+      sr.reveal(".carousel__skill", { delay: 250 });
+    },
+  },
 };
 </script>
 
@@ -124,7 +143,7 @@ $black: #111111;
 $red: #c82d35;
 $montserrat: "Montserrat", sans-serif;
 
-.title {
+.title__skills {
   font-size: 48px;
   font-weight: 700;
   color: $black;

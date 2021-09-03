@@ -1,7 +1,7 @@
 <template>
   <section id="projects">
-    <h2 class="title">Projetos</h2>
-    <slider animation="fade" stopOnHover="true">
+    <h2 class="title_projects">Projetos</h2>
+    <slider class="slider_projects" animation="fade" :stopOnHover="true">
       <slider-item v-for="project in projects" :key="project.title">
         <project-item
           :image="project.image"
@@ -16,6 +16,7 @@
 
 <script>
 import ProjectItem from "./ProjectItem.vue";
+import ScrollReveal from "scrollreveal";
 
 export default {
   name: "Projects",
@@ -105,6 +106,23 @@ export default {
       },
     };
   },
+
+  mounted() {
+    this.scrollReveal();
+  },
+
+  methods: {
+    scrollReveal() {
+      const sr = ScrollReveal({
+        origin: "right",
+        distance: "50px",
+        duration: 2000,
+        reset: true,
+      });
+      sr.reveal(".title_projects", { delay: 200 });
+      sr.reveal(".slider_projects", { delay: 250 });
+    },
+  },
 };
 </script>
 
@@ -115,13 +133,14 @@ $gray: #808080;
 $red: #c82d35;
 $montserrat: "Montserrat", sans-serif;
 
-.title {
+.title_projects {
   font-size: 48px;
   font-weight: 700;
   color: $black;
   text-transform: uppercase;
   text-align: center;
   font-family: $montserrat;
+  margin-bottom: 25px;
   &::after {
     content: "";
     display: block;
