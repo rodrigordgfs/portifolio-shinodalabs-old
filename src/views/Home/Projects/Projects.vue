@@ -29,6 +29,13 @@ export default {
     return {
       projects: [
         {
+          image: "https://i.imgur.com/QWtm2ie.png",
+          title: "Luxury Hotels",
+          description:
+            "Site desenvolvido apartir de um layout encontrado no Figma. Este projeto foi desenvolvido com VueJS.",
+          link: "https://projects.shinodalabs.com.br/luxury-hotels/",
+        },
+        {
           image: "https://i.imgur.com/GQ1a0xY.png",
           title: "Digital Architects",
           description:
@@ -87,12 +94,6 @@ export default {
           description:
             "Este site foi criado com HTML5, CSS3 e JS colocando em prática a experiência adquirida no curso completo de webdesign da Origamid.",
           link: "https://projects.shinodalabs.com.br/arez/",
-        },
-        {
-          image: "https://i.imgur.com/f5xHoaT.png",
-          title: "One Page",
-          description: "Desafio 3 do canal do Discord Codelândia.",
-          link: "https://projects.shinodalabs.com.br/one-page/",
         },
       ],
 
